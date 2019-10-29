@@ -2432,6 +2432,9 @@ namespace ListExercise
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
 			
+			// aapt resource value: 0x7f0800b5
+			public const int button1 = 2131230901;
+			
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
 			
@@ -2500,6 +2503,9 @@ namespace ListExercise
 			
 			// aapt resource value: 0x7f080020
 			public const int disableHome = 2131230752;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int editText1 = 2131230900;
 			
 			// aapt resource value: 0x7f08007e
 			public const int edit_query = 2131230846;
@@ -2594,14 +2600,14 @@ namespace ListExercise
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int masked = 2131230902;
+			// aapt resource value: 0x7f0800b8
+			public const int masked = 2131230904;
 			
 			// aapt resource value: 0x7f0800a6
 			public const int media_actions = 2131230886;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int message = 2131230900;
+			// aapt resource value: 0x7f0800b6
+			public const int message = 2131230902;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2864,8 +2870,8 @@ namespace ListExercise
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int visible = 2131230901;
+			// aapt resource value: 0x7f0800b7
+			public const int visible = 2131230903;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3113,10 +3119,13 @@ namespace ListExercise
 			public const int select_dialog_singlechoice_material = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int support_simple_spinner_dropdown_item = 2130968637;
+			public const int starwars_people_layout = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int tooltip = 2130968638;
+			public const int support_simple_spinner_dropdown_item = 2130968638;
+			
+			// aapt resource value: 0x7f04003f
+			public const int tooltip = 2130968639;
 			
 			static Layout()
 			{

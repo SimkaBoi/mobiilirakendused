@@ -14,15 +14,24 @@ using ListExercise.Core;
 namespace ListExercise
 {
     [Activity(Label = "StarWarsListActivity")]
-    public class StarWarsListActivity : ListActivity
+    public class StarWarsListActivity : Activity
     {
         protected async override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            var queryString = "https://swapi.co/api/people/?search=darth";
+            SetContentView(Resource.Layout.starwars_people_layout);
 
-            var data = await DataService.GetStarWarsPeople(queryString);
-            ListAdapter = new StarWarsPeopleAdapter(this, data.Results);
+            var searchField = FindViewById<EditText>(Resource.Id.editText1);
+            var listView = FindViewById<ListView>(Resource.Id.listView1);
+            var searchButton = FindViewById<Button>(Resource.Id.button1);
+            searchButton.Click += async delegate
+            {
+                var searchText = searchField.Text;
+                var queryString = "https://swapi.co/api/people/?search=" + searchText;
+                var data = await DataService.GetStarWarsPeople(queryString);
+                listView.Adapter = new StarWarsPeopleAdapter(this, data.Results);
+            };
+
         }
     }
 }
