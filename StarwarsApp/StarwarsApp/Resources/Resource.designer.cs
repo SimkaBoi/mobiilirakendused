@@ -2585,14 +2585,14 @@ namespace StarwarsApp
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int masked = 2131230901;
+			// aapt resource value: 0x7f0800b8
+			public const int masked = 2131230904;
 			
 			// aapt resource value: 0x7f0800a2
 			public const int media_actions = 2131230882;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int message = 2131230899;
+			// aapt resource value: 0x7f0800b6
+			public const int message = 2131230902;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -2633,11 +2633,14 @@ namespace StarwarsApp
 			// aapt resource value: 0x7f08000b
 			public const int parent_matrix = 2131230731;
 			
-			// aapt resource value: 0x7f08008d
-			public const int peopleListView = 2131230861;
+			// aapt resource value: 0x7f08008b
+			public const int peopleButton = 2131230859;
 			
 			// aapt resource value: 0x7f08004d
 			public const int pin = 2131230797;
+			
+			// aapt resource value: 0x7f08008c
+			public const int planetsButton = 2131230860;
 			
 			// aapt resource value: 0x7f080006
 			public const int progress_circular = 2131230726;
@@ -2684,11 +2687,14 @@ namespace StarwarsApp
 			// aapt resource value: 0x7f080055
 			public const int scrollable = 2131230805;
 			
-			// aapt resource value: 0x7f08008c
-			public const int searchButton = 2131230860;
+			// aapt resource value: 0x7f0800b0
+			public const int searchButton = 2131230896;
 			
-			// aapt resource value: 0x7f08008b
-			public const int searchEditText = 2131230859;
+			// aapt resource value: 0x7f0800af
+			public const int searchEditText = 2131230895;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int searchListView = 2131230897;
 			
 			// aapt resource value: 0x7f080080
 			public const int search_badge = 2131230848;
@@ -2762,6 +2768,9 @@ namespace StarwarsApp
 			// aapt resource value: 0x7f08002c
 			public const int src_over = 2131230764;
 			
+			// aapt resource value: 0x7f08008d
+			public const int starshipsButton = 2131230861;
+			
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
@@ -2792,17 +2801,17 @@ namespace StarwarsApp
 			// aapt resource value: 0x7f080069
 			public const int textSpacerNoTitle = 2131230825;
 			
-			// aapt resource value: 0x7f0800af
-			public const int textView1 = 2131230895;
-			
-			// aapt resource value: 0x7f0800b0
-			public const int textView2 = 2131230896;
-			
-			// aapt resource value: 0x7f0800b1
-			public const int textView3 = 2131230897;
-			
 			// aapt resource value: 0x7f0800b2
-			public const int textView4 = 2131230898;
+			public const int textView1 = 2131230898;
+			
+			// aapt resource value: 0x7f0800b3
+			public const int textView2 = 2131230899;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int textView3 = 2131230900;
+			
+			// aapt resource value: 0x7f0800b5
+			public const int textView4 = 2131230901;
 			
 			// aapt resource value: 0x7f08009b
 			public const int text_input_password_toggle = 2131230875;
@@ -2861,8 +2870,8 @@ namespace StarwarsApp
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int visible = 2131230900;
+			// aapt resource value: 0x7f0800b7
+			public const int visible = 2131230903;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3095,22 +3104,25 @@ namespace StarwarsApp
 			public const int notification_template_part_time = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int people_row_layout = 2130968632;
+			public const int search_layout = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int select_dialog_item_material = 2130968633;
+			public const int search_row_layout = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int select_dialog_multichoice_material = 2130968634;
+			public const int select_dialog_item_material = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int select_dialog_singlechoice_material = 2130968635;
+			public const int select_dialog_multichoice_material = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int support_simple_spinner_dropdown_item = 2130968636;
+			public const int select_dialog_singlechoice_material = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int tooltip = 2130968637;
+			public const int support_simple_spinner_dropdown_item = 2130968637;
+			
+			// aapt resource value: 0x7f04003e
+			public const int tooltip = 2130968638;
 			
 			static Layout()
 			{

@@ -45,7 +45,7 @@ namespace StarwarsApp
 
             View view = convertView;
             if (view == null)
-                view = _context.LayoutInflater.Inflate(Resource.Layout.people_row_layout, null);
+                view = _context.LayoutInflater.Inflate(Resource.Layout.search_row_layout, null);
             view.FindViewById<TextView>(Resource.Id.textView1).Text = item.Name;
             view.FindViewById<TextView>(Resource.Id.textView2).Text = item.Height.ToString();
             view.FindViewById<TextView>(Resource.Id.textView3).Text = item.Mass.ToString();

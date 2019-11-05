@@ -10,6 +10,9 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="PeopleListActivity" android:name="md55af6a1ed36f56530b7bbad05edaffdf3.PeopleListActivity" />
+    <activity android:label="PlanetListActivity" android:name="md55af6a1ed36f56530b7bbad05edaffdf3.PlanetListActivity" />
+    <activity android:label="StarshipListActivity" android:name="md55af6a1ed36f56530b7bbad05edaffdf3.StarshipListActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="StarwarsApp.StarwarsApp.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

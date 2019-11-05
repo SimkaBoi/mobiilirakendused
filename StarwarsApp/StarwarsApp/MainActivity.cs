@@ -1,4 +1,6 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Support.V7.App;
 using Android.Widget;
@@ -15,17 +17,31 @@ namespace StarwarsApp
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            var searchField = FindViewById<EditText>(Resource.Id.searchEditText);
-            var searchButton = FindViewById<Button>(Resource.Id.searchButton);
-            var peopleListView = FindViewById<ListView>(Resource.Id.peopleListView);
+            var toPeopleActivityButton = FindViewById<Button>(Resource.Id.peopleButton);
+            var toPlanetActivityButton = FindViewById<Button>(Resource.Id.planetsButton);
+            var toStarshipActivityButton = FindViewById<Button>(Resource.Id.starshipsButton);
 
-            searchButton.Click += async delegate
-            {
-                var searchText = searchField.Text;
-                var queryString = "https://swapi.co/api/people/?search=" + searchText;
-                var data = await DataService.GetStarWarsPeople(queryString);
-                peopleListView.Adapter = new StarWarsPeopleAdapter(this, data.Results);
-            };
+            toPeopleActivityButton.Click += toPeopleActivityButton_Click;
+            toPlanetActivityButton.Click += toPlanetActivityButton_Click;
+            toStarshipActivityButton.Click += toStarshipActivityButton_Click;
+        }
+
+        private void toPeopleActivityButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(PeopleListActivity));
+            StartActivity(intent);
+        }
+
+        private void toPlanetActivityButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(PlanetListActivity));
+            StartActivity(intent);
+        }
+
+        private void toStarshipActivityButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(StarshipListActivity));
+            StartActivity(intent);
         }
     }
 }
