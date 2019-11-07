@@ -13,7 +13,7 @@ using StarwarsApp.Core;
 
 namespace StarwarsApp
 {
-    [Activity(Label = "PlanetListActivity")]
+    [Activity(Label = "PlanetListActivity", Theme = "@style/SecondTheme")]
     public class PlanetListActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

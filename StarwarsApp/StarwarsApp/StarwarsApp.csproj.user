@@ -4,5 +4,6 @@
     <SelectedDevice>Sony E6633</SelectedDevice>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
+    <DefaultDevice>g</DefaultDevice>
   </PropertyGroup>
 </Project>
