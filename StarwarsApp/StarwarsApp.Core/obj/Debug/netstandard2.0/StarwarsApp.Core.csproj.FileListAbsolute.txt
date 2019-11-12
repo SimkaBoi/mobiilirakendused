@@ -6,3 +6,4 @@ C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debu
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.AssemblyInfo.cs
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.pdb
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.csprojAssemblyReference.cache

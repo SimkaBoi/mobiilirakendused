@@ -21,10 +21,18 @@ namespace StarwarsApp
             var toPeopleActivityButton = FindViewById<Button>(Resource.Id.peopleButton);
             var toPlanetActivityButton = FindViewById<Button>(Resource.Id.planetsButton);
             var toStarshipActivityButton = FindViewById<Button>(Resource.Id.starshipsButton);
+            var toFilmsActivityButton = FindViewById<Button>(Resource.Id.filmsButton);
 
             toPeopleActivityButton.Click += toPeopleActivityButton_Click;
             toPlanetActivityButton.Click += toPlanetActivityButton_Click;
             toStarshipActivityButton.Click += toStarshipActivityButton_Click;
+            toFilmsActivityButton.Click += toFilmActivityButton_Click;
+        }
+
+        private void toFilmActivityButton_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(FilmListActivity));
+            StartActivity(intent);
         }
 
         private void toPeopleActivityButton_Click(object sender, EventArgs e)

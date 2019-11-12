@@ -57,7 +57,9 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilmListActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="FilmAdapter.cs" />
     <Compile Include="SplashActivity.cs" />
     <Compile Include="StarshipAdapter.cs" />
     <Compile Include="PlanetAdapter.cs" />
@@ -120,6 +122,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\film_search_layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

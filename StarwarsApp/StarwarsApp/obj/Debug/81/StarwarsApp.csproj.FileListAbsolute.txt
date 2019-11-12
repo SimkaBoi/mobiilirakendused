@@ -41,6 +41,7 @@ C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\R.cs.flag
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\R.txt
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\uploadflags.txt
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\res\drawable\splash.png
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\Microsoft.CSharp.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\Mono.Android.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\mscorlib.pdb
@@ -99,4 +100,4 @@ C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\System.Web.Services.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\System.Xml.Linq.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\System.Xml.pdb
-C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\res\drawable\splash.png
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\res\layout\film_search_layout.xml
