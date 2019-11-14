@@ -31,25 +31,25 @@ namespace StarwarsApp
 
         private void toFilmActivityButton_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(FilmListActivity));
+            var intent = new Intent(this, typeof(FilmActivity));
             StartActivity(intent);
         }
 
         private void toPeopleActivityButton_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(PeopleListActivity));
+            var intent = new Intent(this, typeof(PeopleActivity));
             StartActivity(intent);
         }
 
         private void toPlanetActivityButton_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(PlanetListActivity));
+            var intent = new Intent(this, typeof(PlanetActivity));
             StartActivity(intent);
         }
 
         private void toStarshipActivityButton_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(StarshipListActivity));
+            var intent = new Intent(this, typeof(StarshipActivity));
             StartActivity(intent);
         }
     }

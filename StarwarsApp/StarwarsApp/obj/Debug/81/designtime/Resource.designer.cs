@@ -2615,14 +2615,14 @@ namespace StarwarsApp
 			// aapt resource value: 0x7F0C005D
 			public const int scrollView = 2131492957;
 			
-			// aapt resource value: 0x7F020007
-			public const int searchButton = 2130837511;
+			// aapt resource value: 0x7F020010
+			public const int searchButton = 2130837520;
 			
-			// aapt resource value: 0x7F020006
-			public const int searchEditText = 2130837510;
+			// aapt resource value: 0x7F020009
+			public const int searchEditText = 2130837513;
 			
-			// aapt resource value: 0x7F020008
-			public const int searchListView = 2130837512;
+			// aapt resource value: 0x7F020011
+			public const int searchListView = 2130837521;
 			
 			// aapt resource value: 0x7F0C005F
 			public const int search_badge = 2131492959;
@@ -2723,14 +2723,14 @@ namespace StarwarsApp
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
 			
-			// aapt resource value: 0x7F020009
-			public const int textView1 = 2130837513;
+			// aapt resource value: 0x7F020006
+			public const int textView1 = 2130837510;
 			
-			// aapt resource value: 0x7F020010
-			public const int textView2 = 2130837520;
+			// aapt resource value: 0x7F020007
+			public const int textView2 = 2130837511;
 			
-			// aapt resource value: 0x7F020011
-			public const int textView3 = 2130837521;
+			// aapt resource value: 0x7F020008
+			public const int textView3 = 2130837512;
 			
 			// aapt resource value: 0x7F020012
 			public const int textView4 = 2130837522;

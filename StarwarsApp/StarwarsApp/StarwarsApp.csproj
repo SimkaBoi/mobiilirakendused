@@ -57,18 +57,18 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FilmListActivity.cs" />
+    <Compile Include="FilmActivity.cs" />
     <Compile Include="MainActivity.cs" />
-    <Compile Include="FilmAdapter.cs" />
+    <Compile Include="Adapters\FilmAdapter.cs" />
     <Compile Include="SplashActivity.cs" />
-    <Compile Include="StarshipAdapter.cs" />
-    <Compile Include="PlanetAdapter.cs" />
-    <Compile Include="PeopleAdapter.cs" />
-    <Compile Include="PeopleListActivity.cs" />
-    <Compile Include="PlanetListActivity.cs" />
+    <Compile Include="Adapters\StarshipAdapter.cs" />
+    <Compile Include="Adapters\PlanetAdapter.cs" />
+    <Compile Include="Adapters\PeopleAdapter.cs" />
+    <Compile Include="PeopleActivity.cs" />
+    <Compile Include="PlanetActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StarshipListActivity.cs" />
+    <Compile Include="StarshipActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
