@@ -1,5 +1,11 @@
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\StarwarsApp.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\Java.Interop.dll
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\Microsoft.AppCenter.Analytics.Android.Bindings.dll
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\Microsoft.AppCenter.Analytics.dll
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\Microsoft.AppCenter.Android.Bindings.dll
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\Microsoft.AppCenter.Crashes.Android.Bindings.dll
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\Microsoft.AppCenter.Crashes.dll
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\Microsoft.AppCenter.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\Microsoft.CSharp.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\mscorlib.dll

@@ -16,7 +16,7 @@ using Microsoft.AppCenter.Crashes;
 
 namespace StarwarsApp
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/SplashTheme", MainLauncher = true, NoHistory = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/SplashTheme", NoHistory = true)]
     public class SplashActivity : Activity
     {
         static readonly string TAG = "X:" + typeof(SplashActivity).Name;

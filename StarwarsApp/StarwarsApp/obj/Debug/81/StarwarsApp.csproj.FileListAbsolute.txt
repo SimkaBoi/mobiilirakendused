@@ -6,14 +6,11 @@ C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\StarwarsApp.csproj.CoreCompileInputs.cache
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\StarwarsApp.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\StarwarsApp.pdb
-C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\StarwarsApp.StarwarsApp.apk
-C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\StarwarsApp.StarwarsApp-Signed.apk
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\StarwarsApp.Core.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\StarwarsApp.Core.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\StarwarsApp.csproj.CopyComplete
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\StarwarsApp.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\StarwarsApp.pdb
-C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\bin\StarwarsApp.StarwarsApp.apk
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\res\layout\search_layout.xml
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\res\values\colors.xml
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\res\values\ic_launcher_background.xml
@@ -62,6 +59,9 @@ C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\Sys
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\System.Web.Services.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\System.Xml.Linq.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\Mono.Security.pdb
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\StarwarsApp.StarwarsAppSiim.apk
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\bin\Debug\StarwarsApp.StarwarsAppSiim-Signed.apk
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\bin\StarwarsApp.StarwarsAppSiim.apk
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\linksrc\StarwarsApp.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\linksrc\Microsoft.CSharp.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\linksrc\Mono.Android.pdb
@@ -82,5 +82,3 @@ C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\linksrc\System.Web.Services.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\linksrc\System.Xml.Linq.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\linksrc\Mono.Security.pdb
-C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\StarwarsApp.Core.pdb
-C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\StarwarsApp.pdb

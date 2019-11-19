@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "ed4fb23ea5aa7f93e1646354b4f7b1f56e6909ed"
+    "signature": "cce986e42cd6c79467f6dafab6644a2dcc427497"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,11 +9,43 @@
     ".NETStandard,Version=v2.0/": {
       "StarwarsApp.Core/1.0.0": {
         "dependencies": {
+          "Microsoft.AppCenter.Analytics": "2.6.1",
+          "Microsoft.AppCenter.Crashes": "2.6.1",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.2"
         },
         "runtime": {
           "StarwarsApp.Core.dll": {}
+        }
+      },
+      "Microsoft.AppCenter/2.6.1": {
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "2.6.1.0"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Analytics/2.6.1": {
+        "dependencies": {
+          "Microsoft.AppCenter": "2.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "2.6.1.0"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Crashes/2.6.1": {
+        "dependencies": {
+          "Microsoft.AppCenter": "2.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "2.6.1.0"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -37,6 +69,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AppCenter/2.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-61snfRP6oXDVmayjqk+NxyH9tsrL9Zve0Nig5A/Wk9xpSmLKM8QKXEHtfl1MVD5WtemH1XfCyExWebEAVI2gmQ==",
+      "path": "microsoft.appcenter/2.6.1",
+      "hashPath": "microsoft.appcenter.2.6.1.nupkg.sha512"
+    },
+    "Microsoft.AppCenter.Analytics/2.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KtKzSdd7Jo6BG7k93b3ujldStQlf9p1wcZ/Kr/EEf7IjlmRvy/ocaPZwCFnmYJYmWVgv2CEo3VBNmurwrwwrKg==",
+      "path": "microsoft.appcenter.analytics/2.6.1",
+      "hashPath": "microsoft.appcenter.analytics.2.6.1.nupkg.sha512"
+    },
+    "Microsoft.AppCenter.Crashes/2.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-reOAT1E01ijq1deuyXddTCkDnKGbH7Z8pll/i07EEJWSplTn7dw5yNJxQbEd3EaXg1EJx0fufe06KC/fegqJlQ==",
+      "path": "microsoft.appcenter.crashes/2.6.1",
+      "hashPath": "microsoft.appcenter.crashes.2.6.1.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

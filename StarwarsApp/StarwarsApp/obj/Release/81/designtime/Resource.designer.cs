@@ -2302,9 +2302,6 @@ namespace StarwarsApp
 			// aapt resource value: 0x7F010002
 			public const int splash = 2130771970;
 			
-			// aapt resource value: 0x7F010003
-			public const int splash_vana = 2130771971;
-			
 			// aapt resource value: 0x7F090069
 			public const int tooltip_frame_dark = 2131296361;
 			

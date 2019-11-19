@@ -6,15 +6,20 @@ using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 using StarwarsApp.Core;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace StarwarsApp
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/SecondTheme")]
+    [Activity(Label = "@string/app_name", Theme = "@style/SecondTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            AppCenter.Start("4101a498-5266-4d20-9994-09f836ddf635",
+                typeof(Analytics), typeof(Crashes));
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
