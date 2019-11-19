@@ -1,0 +1,116 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.0/",
+    "signature": "cce986e42cd6c79467f6dafab6644a2dcc427497"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.0": {},
+    ".NETStandard,Version=v2.0/": {
+      "StarwarsApp.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.AppCenter.Analytics": "2.6.1",
+          "Microsoft.AppCenter.Crashes": "2.6.1",
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "12.0.2"
+        },
+        "runtime": {
+          "StarwarsApp.Core.dll": {}
+        }
+      },
+      "Microsoft.AppCenter/2.6.1": {
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "2.6.1.0"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Analytics/2.6.1": {
+        "dependencies": {
+          "Microsoft.AppCenter": "2.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "2.6.1.0"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Crashes/2.6.1": {
+        "dependencies": {
+          "Microsoft.AppCenter": "2.6.1"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "2.6.1.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "NETStandard.Library/2.0.3": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Newtonsoft.Json/12.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.2.23222"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StarwarsApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AppCenter/2.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-61snfRP6oXDVmayjqk+NxyH9tsrL9Zve0Nig5A/Wk9xpSmLKM8QKXEHtfl1MVD5WtemH1XfCyExWebEAVI2gmQ==",
+      "path": "microsoft.appcenter/2.6.1",
+      "hashPath": "microsoft.appcenter.2.6.1.nupkg.sha512"
+    },
+    "Microsoft.AppCenter.Analytics/2.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KtKzSdd7Jo6BG7k93b3ujldStQlf9p1wcZ/Kr/EEf7IjlmRvy/ocaPZwCFnmYJYmWVgv2CEo3VBNmurwrwwrKg==",
+      "path": "microsoft.appcenter.analytics/2.6.1",
+      "hashPath": "microsoft.appcenter.analytics.2.6.1.nupkg.sha512"
+    },
+    "Microsoft.AppCenter.Crashes/2.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-reOAT1E01ijq1deuyXddTCkDnKGbH7Z8pll/i07EEJWSplTn7dw5yNJxQbEd3EaXg1EJx0fufe06KC/fegqJlQ==",
+      "path": "microsoft.appcenter.crashes/2.6.1",
+      "hashPath": "microsoft.appcenter.crashes.2.6.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
+      "path": "netstandard.library/2.0.3",
+      "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Newtonsoft.Json/12.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
+      "path": "newtonsoft.json/12.0.2",
+      "hashPath": "newtonsoft.json.12.0.2.nupkg.sha512"
+    }
+  }
+}

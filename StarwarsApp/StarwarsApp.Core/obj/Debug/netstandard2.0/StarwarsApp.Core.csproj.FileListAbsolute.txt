@@ -1,9 +1,9 @@
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\bin\Debug\netstandard2.0\StarwarsApp.Core.deps.json
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\bin\Debug\netstandard2.0\StarwarsApp.Core.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\bin\Debug\netstandard2.0\StarwarsApp.Core.pdb
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.csprojAssemblyReference.cache
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.csproj.CoreCompileInputs.cache
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.AssemblyInfoInputs.cache
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.AssemblyInfo.cs
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.dll
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.pdb
-C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp.Core\obj\Debug\netstandard2.0\StarwarsApp.Core.csprojAssemblyReference.cache
