@@ -17,7 +17,7 @@
 				android:layout_height="wrap_content"
 				android:minWidth="25px"
 				android:minHeight="25px"
-				android:id="@+id/textView1"
+				android:id="@+id/filmTitleTextView"
 				android:layout_weight="1"
 				android:gravity="left"/>
 			<TextView
@@ -26,7 +26,7 @@
 				android:layout_height="wrap_content"
 				android:minWidth="25px"
 				android:minHeight="25px"
-				android:id="@+id/textView2"
+				android:id="@+id/filmYearTextView"
 				android:layout_weight="1"
 				android:gravity="center"/>
 		</LinearLayout>
@@ -37,7 +37,7 @@
 		android:layout_height="wrap_content"
 		android:minWidth="25px"
 		android:minHeight="25px"
-		android:id="@+id/textView3"
+		android:id="@+id/filmDescTextView"
 		android:layout_weight="1"
 		/>
 	</LinearLayout>

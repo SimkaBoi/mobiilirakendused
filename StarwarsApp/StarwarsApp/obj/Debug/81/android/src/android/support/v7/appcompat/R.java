@@ -3020,7 +3020,10 @@ containing a value of this type.
         public static int fill=0x7f080050;
         public static int fill_horizontal=0x7f080051;
         public static int fill_vertical=0x7f080048;
+        public static int filmDescTextView=0x7f0800a0;
         public static int filmList=0x7f08009d;
+        public static int filmTitleTextView=0x7f08009e;
+        public static int filmYearTextView=0x7f08009f;
         public static int filmsButton=0x7f08008e;
         public static int fixed=0x7f080054;
         public static int forever=0x7f080058;
@@ -3040,9 +3043,9 @@ containing a value of this type.
         public static int line3=0x7f080018;
         public static int listMode=0x7f08001d;
         public static int list_item=0x7f080061;
-        public static int masked=0x7f0800ba;
+        public static int masked=0x7f0800bd;
         public static int media_actions=0x7f0800a7;
-        public static int message=0x7f0800b8;
+        public static int message=0x7f0800bb;
         public static int middle=0x7f080031;
         public static int mini=0x7f080053;
         public static int multiply=0x7f080028;
@@ -3112,10 +3115,10 @@ containing a value of this type.
         public static int text2=0x7f08001b;
         public static int textSpacerNoButtons=0x7f08006a;
         public static int textSpacerNoTitle=0x7f080069;
-        public static int textView1=0x7f08009e;
-        public static int textView2=0x7f08009f;
-        public static int textView3=0x7f0800a0;
-        public static int textView4=0x7f0800b7;
+        public static int textView1=0x7f0800b7;
+        public static int textView2=0x7f0800b8;
+        public static int textView3=0x7f0800b9;
+        public static int textView4=0x7f0800ba;
         public static int text_input_password_toggle=0x7f08009c;
         public static int textinput_counter=0x7f080014;
         public static int textinput_error=0x7f080015;
@@ -3135,7 +3138,7 @@ containing a value of this type.
         public static int up=0x7f080009;
         public static int useLogo=0x7f080026;
         public static int view_offset_helper=0x7f080016;
-        public static int visible=0x7f0800b9;
+        public static int visible=0x7f0800bc;
         public static int withText=0x7f08003c;
         public static int wrap_content=0x7f08002e;
     }

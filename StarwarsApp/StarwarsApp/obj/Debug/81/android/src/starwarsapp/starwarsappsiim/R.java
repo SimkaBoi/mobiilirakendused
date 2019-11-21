@@ -3020,7 +3020,9 @@ containing a value of this type.
         public static final int fill=0x7f080050;
         public static final int fill_horizontal=0x7f080051;
         public static final int fill_vertical=0x7f080048;
-        public static final int filmList=0x7f08009d;
+        public static final int filmDescTextView=0x7f0800a0;
+        public static final int filmTitleTextView=0x7f08009e;
+        public static final int filmYearTextView=0x7f08009f;
         public static final int filmsButton=0x7f08008e;
         public static final int fixed=0x7f080054;
         public static final int forever=0x7f080058;
@@ -3040,9 +3042,9 @@ containing a value of this type.
         public static final int line3=0x7f080018;
         public static final int listMode=0x7f08001d;
         public static final int list_item=0x7f080061;
-        public static final int masked=0x7f0800ba;
+        public static final int masked=0x7f0800bc;
         public static final int media_actions=0x7f0800a7;
-        public static final int message=0x7f0800b8;
+        public static final int message=0x7f0800ba;
         public static final int middle=0x7f080031;
         public static final int mini=0x7f080053;
         public static final int multiply=0x7f080028;
@@ -3112,10 +3114,10 @@ containing a value of this type.
         public static final int text2=0x7f08001b;
         public static final int textSpacerNoButtons=0x7f08006a;
         public static final int textSpacerNoTitle=0x7f080069;
-        public static final int textView1=0x7f08009e;
-        public static final int textView2=0x7f08009f;
-        public static final int textView3=0x7f0800a0;
-        public static final int textView4=0x7f0800b7;
+        public static final int textView1=0x7f08009d;
+        public static final int textView2=0x7f0800b7;
+        public static final int textView3=0x7f0800b8;
+        public static final int textView4=0x7f0800b9;
         public static final int text_input_password_toggle=0x7f08009c;
         public static final int textinput_counter=0x7f080014;
         public static final int textinput_error=0x7f080015;
@@ -3135,7 +3137,7 @@ containing a value of this type.
         public static final int up=0x7f080009;
         public static final int useLogo=0x7f080026;
         public static final int view_offset_helper=0x7f080016;
-        public static final int visible=0x7f0800b9;
+        public static final int visible=0x7f0800bb;
         public static final int withText=0x7f08003c;
         public static final int wrap_content=0x7f08002e;
     }

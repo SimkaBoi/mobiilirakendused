@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\FilmActivity.cs" />
+    <Compile Include="Activities\FilmDetailsActivity.cs" />
     <Compile Include="Activities\MainActivity.cs" />
     <Compile Include="Adapters\FilmAdapter.cs" />
     <Compile Include="Activities\SplashActivity.cs" />
