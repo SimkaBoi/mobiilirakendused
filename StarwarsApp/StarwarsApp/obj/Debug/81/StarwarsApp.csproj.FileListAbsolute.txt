@@ -102,3 +102,4 @@ C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\System.Web.Services.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\System.Xml.Linq.pdb
 C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\android\assets\System.Xml.pdb
+C:\Users\opilane\Desktop\mobiilirakendused\StarwarsApp\StarwarsApp\obj\Debug\81\res\layout\film_layout.xml

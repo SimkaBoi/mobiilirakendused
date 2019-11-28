@@ -22,7 +22,7 @@ namespace StarwarsApp
         protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.search_layout);
+            SetContentView(Resource.Layout.film_layout);
             var queryString = "https://swapi.co/api/films/?search=";
 
             var films = await FilmDataService.GetStarWarsFilm(queryString);
@@ -31,9 +31,6 @@ namespace StarwarsApp
 
             filmsListView.ItemClick += (object sender, ItemClickEventArgs e) =>
             {
-                //var clickPositionText = Convert.ToString(filmsListView.GetItemAtPosition(e.Position));
-                //var clickPositionID = Convert.ToString(e.Position);
-
                 var filmDetails = films.Results[e.Position];
 
                 var intent = new Intent(this, typeof(FilmDetailsActivity));

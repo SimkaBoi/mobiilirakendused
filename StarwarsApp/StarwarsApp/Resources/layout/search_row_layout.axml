@@ -10,7 +10,8 @@
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:id="@+id/textView1"
-		android:layout_weight="1"/>
+		android:layout_weight="1"
+		android:gravity="center"/>
 	<TextView
 		android:text="Text"
 		android:layout_width="50dp"
@@ -18,7 +19,8 @@
 		android:minWidth="25px"
 		android:minHeight="25px"
 		android:id="@+id/textView2"
-		android:layout_weight="1"/>
+		android:layout_weight="1"
+		android:gravity="center"/>
 	<TextView
 		android:text="Text"
 		android:layout_width="50dp"
@@ -36,6 +38,6 @@
 		android:minHeight="25px"
 		android:id="@+id/textView4"
 		android:layout_weight="1"
-		android:gravity="right"/>
+		android:gravity="center"/>
 
 </LinearLayout>

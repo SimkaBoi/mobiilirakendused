@@ -12,6 +12,7 @@
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content">
 			<TextView
+				android:layout_marginTop="10dp"
 				android:text="Title"
 				android:layout_width="50dp"
 				android:layout_height="wrap_content"
@@ -19,8 +20,9 @@
 				android:minHeight="25px"
 				android:id="@+id/filmTitleTextView"
 				android:layout_weight="1"
-				android:gravity="left"/>
+				android:gravity="center"/>
 			<TextView
+				android:layout_marginTop="10dp"
 				android:text="Year"
 				android:layout_width="50dp"
 				android:layout_height="wrap_content"
@@ -30,15 +32,31 @@
 				android:layout_weight="1"
 				android:gravity="center"/>
 		</LinearLayout>
-	<TextView
-		android:layout_marginTop="10dp"
-		android:text="Desc"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:minWidth="25px"
-		android:minHeight="25px"
-		android:id="@+id/filmDescTextView"
-		android:layout_weight="1"
-		/>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="20dp"
+				android:text="Desc"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:id="@+id/filmDescTextView"
+				android:layout_weight="1"
+				android:gravity="left"/>
+			<TextView
+				android:layout_marginTop="10dp"
+				android:text=""
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:id="@+id/aaDescTextView"
+				android:layout_weight="1"
+				android:gravity="center"/>
+		</LinearLayout>
 	</LinearLayout>
 </LinearLayout>

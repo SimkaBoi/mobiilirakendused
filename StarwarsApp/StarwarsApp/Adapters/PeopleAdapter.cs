@@ -51,7 +51,7 @@ namespace StarwarsApp
             view.FindViewById<TextView>(Resource.Id.textView3).Text = item.Mass.ToString();
             view.FindViewById<TextView>(Resource.Id.textView4).Text = item.Gender.ToString();
 
-            return view;
+            return view;     
         }
     }
 }
