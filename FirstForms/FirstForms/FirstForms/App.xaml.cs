@@ -25,7 +25,7 @@ namespace FirstForms
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new NotesPage());
+            MainPage = new NavigationPage(new MainPage()); // enne oli notespage
         }
 
         protected override void OnStart()
