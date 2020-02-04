@@ -5,6 +5,15 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="FirstForms.NoteEntryPage">
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="BackgroundColor" Value="AliceBlue"/>
+            <Setter Property="TextColor" Value="Black"/>
+            <Setter Property="CornerRadius" Value="5"/>
+            
+        </Style>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
             <Editor

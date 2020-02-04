@@ -3,6 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FirstForms.App">
     <Application.Resources>
+        <Thickness x:Key="PageMargin">20</Thickness>
+        
+        <Color x:Key="AppBackgroundColor">WhiteSmoke</Color>
+        <Color x:Key="AndroidNavigationBarColor">#9B0CC7</Color>
+        <Color x:Key="UWPNavigationBarColor">Orange</Color>
+        <Color x:Key="AndroidNavigationBarTextColor">White</Color>
+        <Color x:Key="UWPNavigationBarTextColor">Black</Color>
 
+        <Style TargetType="{x:Type NavigationPage}">
+            <Setter Property="BarBackgroundColor"
+                    Value="{OnPlatform Android={StaticResource AndroidNavigationBarColor},
+                                           UWP={StaticResource UWPNavigationBarColor}}"/>
+            <Setter Property="BarTextColor"
+                    Value="{OnPlatform Android={StaticResource AndroidNavigationBarTextColor},
+                                           UWP={StaticResource UWPNavigationBarTextColor}}"/>
+        </Style>
+        <Style TargetType="{x:Type ContentPage}" ApplyToDerivedTypes="true">
+            <Setter Property="BackgroundColor" Value="{StaticResource AppBackgroundColor}"/>
+        </Style>
+        
     </Application.Resources>
 </Application>

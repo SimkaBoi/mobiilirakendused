@@ -812,3 +812,9 @@ C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\
 C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\SQLite-net.dll
+C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\SQLitePCLRaw.core.dll
+C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\e_sqlite3.dll
+C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\SQLitePCLRaw.provider.e_sqlite3.dll

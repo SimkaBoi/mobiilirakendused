@@ -32,6 +32,6 @@ C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms\obj\
 C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms\obj\Debug\netstandard2.0\NotesPage.xaml.g.cs
 C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms\obj\Debug\netstandard2.0\FirstForms.AssemblyInfoInputs.cache
 C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms\obj\Debug\netstandard2.0\FirstForms.AssemblyInfo.cs
-C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms\obj\Debug\netstandard2.0\FirstForms.dll
 C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms\obj\Debug\netstandard2.0\FirstForms.pdb
+C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms\obj\Debug\netstandard2.0\XamlC.stamp
