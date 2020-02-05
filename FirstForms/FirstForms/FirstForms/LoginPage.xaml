@@ -7,9 +7,14 @@
              x:Class="FirstForms.LoginPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Username" />
+            <Entry Text="{Binding Name}" 
+                       Placeholder="Name" />
+            <Label Text="Password" />
+            <Entry Text="{Binding Password}"
+                       Placeholder="Password"
+                       IsPassword="True"/>
+            <Button Text="Login" Clicked="OnLoginButtonClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="FirstForms.NotesPage">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Clicked="OnNoteAddedClicked" Icon="icon.png" Activated="OnNoteAddedClicked"/>
+        <ToolbarItem Clicked="OnNoteAddedClicked" Icon="icon.png"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <ListView x:Name="notesListView" Margin="20" ItemSelected="OnListViewItemSelected">

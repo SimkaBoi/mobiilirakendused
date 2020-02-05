@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FirstForms.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,12 +20,18 @@ namespace FirstForms
 
         async void OnLoginButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LoginPage{});
+            await Navigation.PushAsync(new LoginPage
+            {
+                BindingContext = new User()
+            });
         }
 
         async void OnRegisterButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new RegisterPage{});
+            await Navigation.PushAsync(new RegisterPage
+            {
+                BindingContext = new User()
+            });
         }
     }
 }

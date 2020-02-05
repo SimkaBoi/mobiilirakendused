@@ -7,6 +7,13 @@
              x:Class="FirstForms.RegisterPage">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Username" />
+            <Entry Text="{Binding Name}" 
+                       Placeholder="Name" />
+            <Label Text="Password" />
+            <Entry Text="{Binding Password}"
+                       Placeholder="Password"/>
+            <Button Text="Register" Clicked="OnRegisterButtonClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
