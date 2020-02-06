@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MvvmTutorial"
+             xmlns:vm="clr-namespace:MvvmTutorial.ViewModels;assembly=MvvmTutorial"
+             x:Class="MvvmTutorial.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <local:DoubleRoundingConverter x:Key="stringConverter"/>
+    </ContentPage.Resources>
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <Entry Text="{Binding SubTotal}"  />
+        <Slider Value="{Binding Generosity, Converter={StaticResource stringConverter}}"  />
+        <Label Text="{Binding Tip}" 
+                HorizontalOptions="Center"/>
+        <Label Text="{Binding Total}" 
+                HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>
