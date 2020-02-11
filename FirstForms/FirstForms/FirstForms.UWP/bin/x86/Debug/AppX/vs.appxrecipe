@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-06T06:16:55.588</Modified>
+      <Modified>2020-02-11T06:36:40.864</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\FirstForms.UWP.exe">
       <PackagePath>entrypoint\FirstForms.UWP.exe</PackagePath>
-      <Modified>2020-02-06T06:16:53.840</Modified>
+      <Modified>2020-02-11T06:36:40.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Opilane\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.5\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
@@ -736,7 +736,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms\bin\Debug\netstandard2.0\FirstForms.dll">
       <PackagePath>FirstForms.dll</PackagePath>
-      <Modified>2020-02-06T06:16:48.992</Modified>
+      <Modified>2020-02-11T06:36:35.022</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Opilane\.nuget\packages\xamarin.forms\3.4.0.1008975\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
@@ -891,11 +891,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-02-06T06:16:53.709</Modified>
+      <Modified>2020-02-11T06:36:39.912</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-02-06T06:16:53.709</Modified>
+      <Modified>2020-02-11T06:36:39.912</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -907,7 +907,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Opilane\Desktop\mobiilirakendused\FirstForms\FirstForms\FirstForms.UWP\bin\x86\Debug\Core\FirstForms.UWP.exe">
       <PackagePath>FirstForms.UWP.exe</PackagePath>
-      <Modified>2020-02-06T06:16:55.570</Modified>
+      <Modified>2020-02-11T06:36:40.845</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

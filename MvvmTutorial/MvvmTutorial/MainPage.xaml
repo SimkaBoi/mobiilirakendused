@@ -3,20 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MvvmTutorial"
              xmlns:vm="clr-namespace:MvvmTutorial.ViewModels;assembly=MvvmTutorial"
+             BackgroundColor="LightGray"
              x:Class="MvvmTutorial.MainPage">
     <ContentPage.BindingContext>
         <vm:MainViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Resources>
         <local:DoubleRoundingConverter x:Key="stringConverter"/>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Large"></Setter>
+            <Setter Property="TextColor" Value="Black"></Setter>
+        </Style>
     </ContentPage.Resources>
-    <StackLayout VerticalOptions="CenterAndExpand">
-        <Entry Text="{Binding SubTotal}"  />
-        <Slider Value="{Binding Generosity, Converter={StaticResource stringConverter}}"  />
-        <Label Text="{Binding Tip}" 
+    <StackLayout Margin="20">
+        <StackLayout>
+            <Label FontSize="Large" 
+               FontAttributes="Bold" 
+               HorizontalTextAlignment="Center">Summa ilma jootrahata</Label>
+            <Entry Text="{Binding SubTotal}"  HorizontalTextAlignment="Center"/>
+            <Label FontSize="Large"
+               HorizontalOptions="Center">Jootraha protsent</Label>
+            <Slider ThumbColor="DarkOrange" Value="{Binding Generosity, Converter={StaticResource stringConverter}}"  />
+            <Label FontSize="Large" 
+               HorizontalTextAlignment="Center">Jootraha</Label>
+            <Label FontSize="Large" Text="{Binding Tip}" 
                 HorizontalOptions="Center"/>
-        <Label Text="{Binding Total}" 
+        </StackLayout>
+        <StackLayout BackgroundColor="DarkOrange"
+                     VerticalOptions="EndAndExpand">
+            <Label FontSize="Large" HorizontalTextAlignment="Center">Summa koos jootrahaga</Label>
+            <Label FontSize="40" Text="{Binding Total}" 
                 HorizontalOptions="Center"/>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
