@@ -10,7 +10,7 @@ namespace MvvmTutorial
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage( new FirstTabbedPage());
         }
 
         protected override void OnStart()
