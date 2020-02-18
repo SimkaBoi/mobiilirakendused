@@ -1,5 +1,4 @@
-﻿using MvvmTutorial.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,9 +15,6 @@ namespace MvvmTutorial
         public LanguagesPage()
         {
             InitializeComponent();
-            LanguageList.ItemsSource = new List<LanguageModel>()
-            {    
-            };
         }
     }
 }

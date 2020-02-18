@@ -4,8 +4,9 @@ using System.Text;
 
 namespace MvvmTutorial.Models
 {
-    class LanguageModel
+    public class Language
     {
-        public string Language { get; set; }
+        public string Name { get; set; }
+        public string ShortName { get; set; }
     }
 }
