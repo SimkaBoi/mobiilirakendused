@@ -9,7 +9,7 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
             x:Class="MvvmTutorial.FirstTabbedPage">
   <!--Pages can be added as references or inline-->
-    <local:MainPage Title="TipCal" Icon="icon.png"/>
-    <local:SettingsPage Title="Settings"/>
-    <local:PicturesPage Title="Pictures"/>
+    <local:MainPage Title="TipCal" Icon="tip_icon.png"/>
+    <local:SettingsPage Title="Settings" Icon="settings_icon.png"/>
+    <local:PicturesPage Title="Pictures" Icon="images_icon.png"/>
 </TabbedPage>

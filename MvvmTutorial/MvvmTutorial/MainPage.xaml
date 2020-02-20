@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MvvmTutorial"
              xmlns:vm="clr-namespace:MvvmTutorial.ViewModels;assembly=MvvmTutorial"
-             BackgroundColor="LightGray"
              x:Class="MvvmTutorial.MainPage">
     <ContentPage.BindingContext>
         <vm:MainViewModel/>
