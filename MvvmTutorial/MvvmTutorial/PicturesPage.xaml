@@ -11,13 +11,15 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="pictureList" ItemsSource="{Binding Languages}" SelectedItem="{Binding SelectedLanguage}">
+            <ListView x:Name="pictureList" ItemsSource="{Binding Pictures}" VerticalOptions="FillAndExpand" HasUnevenRows="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Orientation="Horizontal" Margin="20,0,20,0">
-                                <Label Text="{Binding Name}"></Label>
-                                <Label Text="{Binding ShortName}" HorizontalOptions="EndAndExpand"></Label>
+                            <StackLayout Margin="20,20,20,20">
+                                <Label Text="{Binding Title}" FontSize="Large"></Label>
+                                <Label Text="{Binding Date}"></Label>
+                                <Image Source="{Binding Image}" HeightRequest="300"></Image>
+                                <Label Text="{Binding Desc}"></Label>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
