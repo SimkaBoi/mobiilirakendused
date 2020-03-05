@@ -16,15 +16,14 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Margin="20,20,20,20">
-                                <Label Text="{Binding Title}" FontSize="Large"></Label>
-                                <Label Text="{Binding Date}"></Label>
-                                <Image Source="{Binding Image}" HeightRequest="300"></Image>
-                                <Label Text="{Binding Desc}"></Label>
+                                <Label Text="{Binding Name}" FontSize="Large"></Label>
+                                <Image Source="{Binding Source}" HeightRequest="300"></Image>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Button x:Name="AddPhoto" Text="Add photo" VerticalOptions="CenterAndExpand" Command="{Binding TakePictureCommand}"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

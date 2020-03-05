@@ -2,9 +2,11 @@
 using MvvmTutorial.Models;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.IO;
 using System.Text;
+using System.Windows.Input;
 
 namespace MvvmTutorial.ViewModels
 {
@@ -17,6 +19,7 @@ namespace MvvmTutorial.ViewModels
         }
         public PictureViewModel()
         {
+            Image = new ObservableCollection<ImageWithInfo>();
             Pictures = new List<Picture>
             {
                 new Picture { Title = "title1", Desc = "desc1", Image = "http://loremflickr.com/600/600/nature?filename=simple.jpg", Date = DateTime.Now },
@@ -26,6 +29,8 @@ namespace MvvmTutorial.ViewModels
                 new Picture { Title = "obamium", Desc = "oboomer", Image = "obamium.jpg", Date = DateTime.Now },
             };
         }
+
+        public ICommand TakePictureCommand { get; private set; }
 
         private List<Picture> _pictures;
         public List<Picture> Pictures
@@ -40,5 +45,6 @@ namespace MvvmTutorial.ViewModels
                 }
             }
         }
+
     }
 }
