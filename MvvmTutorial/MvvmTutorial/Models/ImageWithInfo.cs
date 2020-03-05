@@ -6,6 +6,6 @@ namespace MvvmTutorial.Models
     public class ImageWithInfo
     {
         public string Name { get; set; }
-        public ImageSource Image { get; set; }
+        public ImageSource Source { get; set; }
     }
 }

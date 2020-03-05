@@ -1,5 +1,6 @@
 ﻿using FFImageLoading.Forms;
 using MvvmTutorial.Models;
+using Plugin.Media;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -7,6 +8,7 @@ using System.ComponentModel;
 using System.IO;
 using System.Text;
 using System.Windows.Input;
+using Xamarin.Forms;
 
 namespace MvvmTutorial.ViewModels
 {
@@ -19,31 +21,62 @@ namespace MvvmTutorial.ViewModels
         }
         public PictureViewModel()
         {
-            Image = new ObservableCollection<ImageWithInfo>();
-            Pictures = new List<Picture>
-            {
-                new Picture { Title = "title1", Desc = "desc1", Image = "http://loremflickr.com/600/600/nature?filename=simple.jpg", Date = DateTime.Now },
-                new Picture { Title = "title2", Desc = "desc2", Image = "http://loremflickr.com/600/600/nature?filename=simple.jpg", Date = DateTime.Now },
-                new Picture { Title = "title3", Desc = "desc3", Image = "http://loremflickr.com/600/600/nature?filename=simple.jpg", Date = DateTime.Now },
-                new Picture { Title = "title4", Desc = "desc4", Image = "http://loremflickr.com/600/600/nature?filename=simple.jpg", Date = DateTime.Now },
-                new Picture { Title = "obamium", Desc = "oboomer", Image = "obamium.jpg", Date = DateTime.Now },
-            };
+            Images = new ObservableCollection<ImageWithInfo>();
+            TakePictureCommand = new Command(OnTakePictureCommand);
         }
 
-        public ICommand TakePictureCommand { get; private set; }
-
-        private List<Picture> _pictures;
-        public List<Picture> Pictures
+        private ObservableCollection<ImageWithInfo> _images;
+        public ObservableCollection<ImageWithInfo> Images
         {
-            get { return _pictures; }
+            get { return _images; }
             set
             {
-                if (_pictures != value)
+                if (_images != value)
                 {
-                    _pictures = value;
-                    OnPropertyChanged(nameof(Pictures));
+                    _images = value;
+                    OnPropertyChanged(nameof(Images));
                 }
+            }   
+        }
+        public ICommand TakePictureCommand { get; private set; }
+
+        private async void OnTakePictureCommand()
+        {
+            await CrossMedia.Current.Initialize();
+
+            if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+            {          
+                return;
             }
+
+            var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+            {
+                Directory = "Sample",
+                Name = "test.jpg"
+            });
+
+            if (file == null)
+                return;
+
+            var image = new ImageWithInfo();
+            image.Name = "New picture";
+            //image.Url = ImageSource.FromStream(file.Path);
+
+
+            image.Source = ImageSource.FromStream(() =>
+            {
+                var stream = file.GetStream();
+                return stream;
+            });
+
+            Images.Add(image);
+        }
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged(string name)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
     }
