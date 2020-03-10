@@ -14,11 +14,6 @@ namespace MvvmTutorial.ViewModels
 {
     public class PictureViewModel : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged(string name)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
         public PictureViewModel()
         {
             Images = new ObservableCollection<ImageWithInfo>();
@@ -45,7 +40,8 @@ namespace MvvmTutorial.ViewModels
             await CrossMedia.Current.Initialize();
 
             if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
-            {          
+            {
+                await Application.Current.MainPage.DisplayAlert("Alert", "Camera can't be opened right now", "OK");
                 return;
             }
 

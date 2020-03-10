@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -6,8 +6,8 @@
              xmlns:vm="clr-namespace:MvvmTutorial.ViewModels;assembly=MvvmTutorial"
              mc:Ignorable="d"
              x:Class="MvvmTutorial.PicturesPage">
-    <ContentPage.BindingContext>
-        <vm:PictureViewModel/>
+        <ContentPage.BindingContext>
+            <vm:PictureViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
