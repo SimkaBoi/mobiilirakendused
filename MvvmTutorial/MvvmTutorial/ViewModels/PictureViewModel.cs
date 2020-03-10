@@ -1,6 +1,7 @@
 ﻿using FFImageLoading.Forms;
 using MvvmTutorial.Models;
 using Plugin.Media;
+using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -18,6 +19,7 @@ namespace MvvmTutorial.ViewModels
         {
             Images = new ObservableCollection<ImageWithInfo>();
             TakePictureCommand = new Command(OnTakePictureCommand);
+            PickPictureCommand = new Command(OnPickPictureCommand);
         }
 
         private ObservableCollection<ImageWithInfo> _images;
@@ -75,5 +77,38 @@ namespace MvvmTutorial.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
+        public ICommand PickPictureCommand { get; private set; }
+
+        private async void OnPickPictureCommand()
+        {
+            await CrossMedia.Current.Initialize();
+
+            if (!CrossMedia.Current.IsPickPhotoSupported)
+            {
+                await Application.Current.MainPage.DisplayAlert("Alert", "Can't open album", "OK");
+                return;
+            }
+
+            var file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions
+            {
+                PhotoSize = PhotoSize.Full
+            });
+
+            if (file == null)
+                return;
+
+            var image = new ImageWithInfo();
+            image.Name = "New picture";
+            //image.Url = ImageSource.FromStream(file.Path);
+
+
+            image.Source = ImageSource.FromStream(() =>
+            {
+                var stream = file.GetStream();
+                return stream;
+            });
+
+            Images.Add(image);
+        }
     }
 }

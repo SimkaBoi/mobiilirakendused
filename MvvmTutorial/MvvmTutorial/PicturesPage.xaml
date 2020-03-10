@@ -11,7 +11,7 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="pictureList" ItemsSource="{Binding Pictures}" VerticalOptions="FillAndExpand" HasUnevenRows="true">
+            <ListView x:Name="pictureList" ItemsSource="{Binding Images}" VerticalOptions="FillAndExpand" HasUnevenRows="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -24,6 +24,7 @@
                 </ListView.ItemTemplate>
             </ListView>
             <Button x:Name="AddPhoto" Text="Add photo" VerticalOptions="CenterAndExpand" Command="{Binding TakePictureCommand}"></Button>
+            <Button x:Name="PickPhoto" Text="Pick photo" VerticalOptions="CenterAndExpand" Command="{Binding PickPictureCommand}"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
