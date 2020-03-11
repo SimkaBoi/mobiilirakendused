@@ -967,24 +967,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Opilane\\.nuget\\packages\\": {},
+    "C:\\Users\\opilane\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms.Android\\FirstForms.Android.csproj",
+      "projectUniqueName": "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms.Android\\FirstForms.Android.csproj",
       "projectName": "FirstForms.Android",
-      "projectPath": "C:\\Users\\Opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms.Android\\FirstForms.Android.csproj",
-      "packagesPath": "C:\\Users\\Opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms.Android\\obj\\",
+      "projectPath": "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms.Android\\FirstForms.Android.csproj",
+      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -998,8 +998,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\Opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms\\FirstForms.csproj": {
-              "projectPath": "C:\\Users\\Opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms\\FirstForms.csproj"
+            "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms\\FirstForms.csproj": {
+              "projectPath": "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\FirstForms\\FirstForms\\FirstForms\\FirstForms.csproj"
             }
           }
         }
