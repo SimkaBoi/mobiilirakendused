@@ -651,21 +651,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\opilane\\.nuget\\packages\\": {}
+    "C:\\Users\\Siim\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp\\StarwarsApp.csproj",
+      "projectUniqueName": "C:\\Users\\Siim\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp\\StarwarsApp.csproj",
       "projectName": "StarwarsApp",
-      "projectPath": "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp\\StarwarsApp.csproj",
-      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp\\obj\\",
+      "projectPath": "C:\\Users\\Siim\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp\\StarwarsApp.csproj",
+      "packagesPath": "C:\\Users\\Siim\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Siim\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Siim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid81"
@@ -677,8 +682,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp.Core\\StarwarsApp.Core.csproj": {
-              "projectPath": "C:\\Users\\opilane\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp.Core\\StarwarsApp.Core.csproj"
+            "C:\\Users\\Siim\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp.Core\\StarwarsApp.Core.csproj": {
+              "projectPath": "C:\\Users\\Siim\\Desktop\\mobiilirakendused\\StarwarsApp\\StarwarsApp.Core\\StarwarsApp.Core.csproj"
             }
           }
         }
