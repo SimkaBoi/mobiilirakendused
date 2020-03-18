@@ -1,5 +1,4 @@
-﻿using Images.Models;
-using SQLite;
+﻿using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -14,22 +13,22 @@ namespace Images.Data
         public ImageDatabase(string dbPath)
         {
             _database = new SQLiteAsyncConnection(dbPath);
-            _database.CreateTableAsync<ImageWithInfo>().Wait();
+            _database.CreateTableAsync<ImageData>().Wait();
         }
         // notes
-        public Task<List<ImageWithInfo>> GetImagesAsync()
+        public Task<List<ImageData>> GetImagesAsync()
         {
-            return _database.Table<ImageWithInfo>().ToListAsync();
+            return _database.Table<ImageData>().ToListAsync();
         }
 
-        public Task<ImageWithInfo> GetImageAsync(int id)
+        public Task<ImageData> GetImageAsync(int id)
         {
-            return _database.Table<ImageWithInfo>()
+            return _database.Table<ImageData>()
                             .Where(x => x.Id == id)
                             .FirstOrDefaultAsync();
         }
 
-        public Task<int> SaveImageAsync(ImageWithInfo image)
+        public Task<int> SaveImageAsync(ImageData image)
         {
             if (image.Id != 0)
             {
@@ -41,9 +40,14 @@ namespace Images.Data
             }
         }
 
-        public Task<int> DeleteImageAsync(ImageWithInfo image)
+        public Task<int> DeleteImageAsync(ImageData image)
         {
             return _database.DeleteAsync(image);
+        }
+
+        public Task<int> GetImageCount()
+        {
+            return _database.Table<ImageData>().CountAsync();
         }
     }
 }

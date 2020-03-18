@@ -1,10 +1,12 @@
-﻿using Images.Models;
+﻿using Images.Data;
+using Images.Models;
 using Plugin.Media;
 using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.IO;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -18,6 +20,7 @@ namespace Images.ViewModels
             Images = new ObservableCollection<ImageWithInfo>();
             TakePictureCommand = new Command(OnTakePictureCommand);
             PickPictureCommand = new Command(OnPickPictureCommand);
+            UpdateList();
         }
 
         private ObservableCollection<ImageWithInfo> _images;
@@ -54,18 +57,13 @@ namespace Images.ViewModels
             if (file == null)
                 return;
 
-            var image = new ImageWithInfo();
-            image.Name = "New picture";
-            //image.Url = ImageSource.FromStream(file.Path);
+            // db stuff
 
-
-            image.Source = ImageSource.FromStream(() =>
-            {
-                var stream = file.GetStream();
-                return stream;
-            });
-
-            Images.Add(image);
+            var dbImage = new ImageData();
+            dbImage.Title = "Title";
+            dbImage.Path = file.Path.ToString();
+            await App.Database.SaveImageAsync(dbImage);
+            AddToList();
         }
 
 
@@ -95,18 +93,42 @@ namespace Images.ViewModels
             if (file == null)
                 return;
 
-            var image = new ImageWithInfo();
-            image.Name = "New picture";
-            //image.Url = ImageSource.FromStream(file.Path);
+            // db stuff
 
+            var dbImage = new ImageData();
+            dbImage.Title = "Title";
+            dbImage.Path = file.Path.ToString();
+            await App.Database.SaveImageAsync(dbImage);
+            AddToList();
+        }
 
-            image.Source = ImageSource.FromStream(() =>
+        private async void AddToList()
+        {
+            List<ImageData> images = await App.Database.GetImagesAsync();
+            var image = images[images.Count - 1];
+            var imageModel = new ImageWithInfo();
+            imageModel.Name = image.Title;
+            imageModel.Source = ImageSource.FromFile(image.Path);
+            Images.Add(imageModel);
+        }
+
+        private async void UpdateList()
+        {
+            List<ImageData> images = await App.Database.GetImagesAsync();
+            if(images.Count == 0)
             {
-                var stream = file.GetStream();
-                return stream;
-            });
-
-            Images.Add(image);
+                return;
+            }
+            else
+            {
+                foreach (var image in images)
+                {
+                    var imageModel = new ImageWithInfo();
+                    imageModel.Name = image.Title;
+                    imageModel.Source = ImageSource.FromFile(image.Path);
+                    Images.Add(imageModel);
+                }
+            }
         }
     }
 }
