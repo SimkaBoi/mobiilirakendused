@@ -16,14 +16,10 @@
             <Entry Text="{Binding Password}"
                        Placeholder="Password"
                        IsPassword="True"/>
-            <Button Text="Login" Command="{Binding LoginCommand}"/>
-            <Label Text="or" HorizontalTextAlignment="Center" Margin="0, 50, 0, 50"></Label>
-            <Entry Text="{Binding Name}" 
-                       Placeholder="Name" />
-            <Entry Text="{Binding Password}"
-                       Placeholder="Password"
-                       IsPassword="True"/>
-            <Button Text="Register" Command="{Binding RegisterCommand}"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Login" Command="{Binding LoginCommand}" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Register" Command="{Binding RegisterCommand}" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
