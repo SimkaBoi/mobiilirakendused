@@ -74,7 +74,7 @@ namespace Images.ViewModels
         public ICommand RegisterCommand { get; private set; }
         private async void OnRegisterButtonClickedCommand()
         {
-            if (await AreRegisterCredentialsCorrect() == true)
+            if (await IsUsernameTaken() == false && await AreRegisterCredentialsCorrect() == true)
             {
                 await Application.Current.MainPage.Navigation.PushAsync(new MainPage());
             }
@@ -87,6 +87,20 @@ namespace Images.ViewModels
             {
                 await App.Database.SaveUserAsync(user);
                 return true;
+            }
+            return false;
+        }
+
+        public async Task<bool> IsUsernameTaken()
+        {
+            var user = new UserData() { Username = Name, Password = Password };
+            List<UserData> users = await App.Database.GetUsersAsync();
+            foreach(var name in users)
+            {
+                if(name.Username == user.Username)
+                {
+                    return true;
+                }
             }
             return false;
         }
