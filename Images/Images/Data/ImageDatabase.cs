@@ -50,5 +50,41 @@ namespace Images.Data
         {
             return _database.Table<ImageData>().CountAsync();
         }
+
+        //users
+
+        public Task<List<UserData>> GetUsersAsync()
+        {
+            return _database.Table<UserData>().ToListAsync();
+        }
+
+        public Task<UserData> GetUserAsync(int id)
+        {
+            return _database.Table<UserData>()
+                            .Where(x => x.Id == id)
+                            .FirstOrDefaultAsync();
+        }
+
+        public Task<int> SaveUserAsync(UserData user)
+        {
+            if (user.Id != 0)
+            {
+                return _database.UpdateAsync(user);
+            }
+            else
+            {
+                return _database.InsertAsync(user);
+            }
+        }
+
+        public Task<int> DeleteUserAsync(UserData user)
+        {
+            return _database.DeleteAsync(user);
+        }
+
+        public Task<int> GetUserCount()
+        {
+            return _database.Table<UserData>().CountAsync();
+        }
     }
 }
