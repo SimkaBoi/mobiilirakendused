@@ -24,8 +24,7 @@ namespace Images
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new LoginRegisterPage());
         }
 
         protected override void OnStart()

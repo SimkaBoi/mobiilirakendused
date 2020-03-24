@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Images.ViewModels;assembly=Images"
+             mc:Ignorable="d"
+             x:Class="Images.LoginRegisterPage">
+    <ContentPage.BindingContext>
+        <vm:LoginRegisterViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Entry Text="{Binding Name}" 
+                       Placeholder="Name" />
+            <Entry Text="{Binding Password}"
+                       Placeholder="Password"
+                       IsPassword="True"/>
+            <Button Text="Login" Command="{Binding LoginCommand}"/>
+            <Label Text="or" HorizontalTextAlignment="Center" Margin="0, 50, 0, 50"></Label>
+            <Entry Text="{Binding Name}" 
+                       Placeholder="Name" />
+            <Entry Text="{Binding Password}"
+                       Placeholder="Password"
+                       IsPassword="True"/>
+            <Button Text="Register" Command="{Binding RegisterCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -14,6 +14,7 @@ namespace Images.Data
         {
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<ImageData>().Wait();
+            _database.CreateTableAsync<UserData>().Wait();
         }
         // notes
         public Task<List<ImageData>> GetImagesAsync()

@@ -61,7 +61,7 @@ namespace Images.ViewModels
 
             var dbImage = new ImageData();
             dbImage.Title = "Title";
-            dbImage.Path = file.Path.ToString();
+            dbImage.Path = file.Path;
             await App.Database.SaveImageAsync(dbImage);
             AddToList();
         }

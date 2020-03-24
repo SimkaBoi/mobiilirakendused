@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Images.Data
 {
-    public class ImageData
+    public class UserData
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
-        public string Title { get; set; }
-        public string Path { get; set; }
-        public int UserId { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string ProfilePicPath { get; set; }
     }
 }
