@@ -8,4 +8,5 @@
             x:Class="Images.FirstTabbedPage">
     <!--Pages can be added as references or inline-->
     <local:MainPage Title="MainPage"/>
+    <local:ProfilePage Title="Profile"/>
 </TabbedPage>

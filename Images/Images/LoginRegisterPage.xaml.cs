@@ -21,28 +21,32 @@ namespace Images
 
         private async void OnLoginButtonClicked(object sender, EventArgs e)
         {
-            var user = new UserData() { Username = Username.Text, Password = Password.Text };
-            List<UserData> users = await App.Database.GetUsersAsync();
-            if(user.Username == null || user.Password == null || user.Username == "" || user.Password == "")
+            if(Username.Text == "" || Username.Text == null || Password.Text == "" || Password.Text == null)
             {
                 OnError("Please fill all the fields!");
             }
             else
             {
-                var name = users.Where(x => x.Username == user.Username).FirstOrDefault();
-                if (name == null)
+                List<UserData> users = await App.Database.GetUsersAsync();
+                if(users.Count == 0)
                 {
                     OnError("Wrong username or password!");
-                }
-                else if (user.Username == name.Username && user.Password == name.Password)
-                {
-                    var tabbedPage = new FirstTabbedPage();
-                    tabbedPage.BindingContext = user;
-                    await Navigation.PushAsync(tabbedPage);
                 }
                 else
                 {
-                    OnError("Wrong username or password!");
+                    foreach(var user in users)
+                    {
+                        if(user.Username == Username.Text && user.Password == Password.Text)
+                        {
+                            var tabbedPage = new FirstTabbedPage();
+                            tabbedPage.BindingContext = user;
+                            await Navigation.PushAsync(tabbedPage);
+                        }
+                        else
+                        {
+                            OnError("Wrong username or password!");
+                        }
+                    }
                 }
             }
         }
@@ -51,32 +55,47 @@ namespace Images
         {
             var user = new UserData() { Username = Username.Text, Password = Password.Text };
             List<UserData> users = await App.Database.GetUsersAsync();
-            foreach (var name in users)
+            if(users.Count == 0)
             {
-                if(user.Username == "" || user.Username == null || user.Password == "" ||user.Password == null)
+                if (user.Username == "" || user.Username == null || user.Password == "" || user.Password == null)
                 {
                     OnError("Please fill all the fields!");
-                    break;
-                }
-                else if (name.Username == user.Username)
-                {
-                    OnError("Username is already taken!");
-                    break;
                 }
                 else
                 {
                     await App.Database.SaveUserAsync(user);
-                    var tabbedPage = new FirstTabbedPage();
-                    tabbedPage.BindingContext = user;
-                    await Navigation.PushAsync(tabbedPage);
-                    break;
+                    Alert.Text = "User created!";
+                }
+            }
+            else
+            {
+                foreach (var name in users)
+                {
+                    if (user.Username == "" || user.Username == null || user.Password == "" || user.Password == null)
+                    {
+                        OnError("Please fill all the fields!");
+                        break;
+                    }
+                    else if (name.Username == user.Username)
+                    {
+                        OnError("Username is already taken!");
+                        break;
+                    }
+                    else
+                    {
+                        await App.Database.SaveUserAsync(user);
+                        var tabbedPage = new FirstTabbedPage();
+                        tabbedPage.BindingContext = user;
+                        await Navigation.PushAsync(tabbedPage);
+                        break;
+                    }
                 }
             }
         }
 
         private async void OnError(string error)
         {
-            Error.Text = error;
+            Alert.Text = error;
         }
     }
 }
