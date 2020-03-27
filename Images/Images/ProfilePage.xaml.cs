@@ -47,7 +47,9 @@ namespace Images
             if(user.Username != null || user.Username != "")
             {
                 user.Username = UsernameEntry.Text;
-                user.ProfilePicPath = ProfilePicEntry.Source.ToString();
+                var path = ProfilePicEntry.Source.ToString();
+                var fixedPath = path.Substring(6);
+                user.ProfilePicPath = fixedPath;
 
                 await App.Database.SaveUserAsync(user);
             }

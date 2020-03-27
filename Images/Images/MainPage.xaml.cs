@@ -1,5 +1,10 @@
-﻿using System;
+﻿using Images.Data;
+using Images.Models;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -16,6 +21,18 @@ namespace Images
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            GetImages();
+        }
+
+        private async void GetImages()
+        {
+            List<ImageData> Images = await App.Database.GetImagesAsync();
+            pictureList.ItemsSource = Images;
         }
     }
 }

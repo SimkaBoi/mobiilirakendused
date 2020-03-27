@@ -7,8 +7,8 @@
              x:Class="Images.ProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Profile"/>
-            <Label Text="{Binding Username}" x:Name="UsernameLabel"/>
+            <Label Text="Your profile"/>
+            <Label Text="Username" x:Name="UsernameLabel"/>
             <Entry Text="{Binding Username}" x:Name="UsernameEntry" Placeholder="Change your username"/>
             <Label Text="Profile Image" x:Name="ImageLabel"/>
             <Image Source="{Binding ProfilePicPath}" x:Name="ProfilePicEntry" HeightRequest="350"/>
