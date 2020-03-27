@@ -7,10 +7,15 @@
              x:Class="Images.AddImagePage">
     <ContentPage.Content>
         <StackLayout>
+            <Label Text="Add a photo" FontSize="Large" HorizontalOptions="CenterAndExpand"></Label>
             <Entry x:Name="ImageTitle" Placeholder="Add a title"></Entry>
-            <Button x:Name="AddPhoto" Text="Add photo" VerticalOptions="CenterAndExpand" Clicked="OnTakePictureButtonClicked"></Button>
-            <Button x:Name="PickPhoto" Text="Pick photo" VerticalOptions="CenterAndExpand" Clicked="OnPickPictureButtonClicked"></Button>
-            <Label x:Name="Alert" Text=""></Label>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="AddPhoto" Text="Add photo" HorizontalOptions="FillAndExpand" Clicked="OnTakePictureButtonClicked"></Button>
+                <Button x:Name="PickPhoto" Text="Pick photo" HorizontalOptions="FillAndExpand" Clicked="OnPickPictureButtonClicked"></Button>
+            </StackLayout>
+            <Image x:Name="AddPic" HeightRequest="200" WidthRequest="200"></Image>
+            <Button x:Name="Save" Text="Save Photo" Clicked="SaveButtonClicked" HorizontalOptions="FillAndExpand"></Button>
+            <Label x:Name="Alert" Text="" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

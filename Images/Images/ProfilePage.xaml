@@ -7,14 +7,14 @@
              x:Class="Images.ProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Your profile"/>
+            <Label Text="Your profile" FontSize="Large" HorizontalOptions="CenterAndExpand"/>
             <Label Text="Username" x:Name="UsernameLabel"/>
             <Entry Text="{Binding Username}" x:Name="UsernameEntry" Placeholder="Change your username"/>
             <Label Text="Profile Image" x:Name="ImageLabel"/>
-            <Image Source="{Binding ProfilePicPath}" x:Name="ProfilePicEntry" HeightRequest="350"/>
-            <Button Text="Add a profile picture" Clicked="AddProfilePic"></Button>
-            <Button Text="Save changes" Clicked="SaveChanges"></Button>
-            <Label x:Name="Alert" Text=""></Label>
+            <Button Text="Change profile picture" Clicked="AddProfilePic"></Button>
+            <Image Source="{Binding ProfilePicPath}" x:Name="ProfilePicEntry" HeightRequest="200" WidthRequest="200"></Image>
+            <Label x:Name="Alert" Text="" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
+            <Button Text="Save changes" Clicked="SaveChanges" VerticalOptions="EndAndExpand" Margin="0, 0, 0, 15"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

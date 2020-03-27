@@ -22,7 +22,9 @@ namespace Images
         {
             InitializeComponent();
         }
-
+        public string Title { get; set; }
+        public string Path { get; set; }
+        public string UserPic { get; set; }
         private async void OnTakePictureButtonClicked(object sender, EventArgs e)
         {
             await CrossMedia.Current.Initialize();
@@ -50,12 +52,10 @@ namespace Images
             else
             {
                 var user = (UserData)BindingContext;
-                var image = new ImageData();
-                image.Title = ImageTitle.Text;
-                image.Path = file.Path;
-                image.UserPic = user.ProfilePicPath;
-                await App.Database.SaveImageAsync(image);
-                OnAlert("Image has been posted!");
+                Title = ImageTitle.Text;
+                Path = file.Path;
+                UserPic = user.ProfilePicPath;
+                AddPic.Source = file.Path;
             }
         }
 
@@ -85,18 +85,23 @@ namespace Images
             else
             {
                 var user = (UserData)BindingContext;
-                var image = new ImageData();
-                image.Title = ImageTitle.Text;
-                image.Path = file.Path;
-                image.UserPic = user.ProfilePicPath;
-                await App.Database.SaveImageAsync(image);
-                OnAlert("Image has been posted!");
+                Title = ImageTitle.Text;
+                Path = file.Path;
+                UserPic = user.ProfilePicPath;
+                AddPic.Source = file.Path;
             }
         }
 
         private async void OnAlert(string alert)
         {
             Alert.Text = alert;
+        }
+
+        private async void SaveButtonClicked(object sender, EventArgs e)
+        {
+            var image = new ImageData() { Title = ImageTitle.Text, Path = Path, UserPic = UserPic };
+            await App.Database.SaveImageAsync(image);
+            OnAlert("Image has been posted!");
         }
     }
 }

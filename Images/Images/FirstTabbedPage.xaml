@@ -5,9 +5,11 @@
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
             mc:Ignorable="d"
             xmlns:local="clr-namespace:Images;assembly=Images"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
             x:Class="Images.FirstTabbedPage">
     <!--Pages can be added as references or inline-->
-    <local:MainPage Title="MainPage"/>
-    <local:ProfilePage Title="Profile"/>
-    <local:AddImagePage Title="Add Image"/>
+    <local:MainPage Title="MainPage" Icon="mainpage_icon.png"/>
+    <local:ProfilePage Title="Profile" Icon="profile_icon.png"/>
+    <local:AddImagePage Title="Add Image" Icon="addimage_icon.png"/>
 </TabbedPage>

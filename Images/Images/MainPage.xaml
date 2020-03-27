@@ -12,8 +12,10 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Margin="20,20,20,20">
-                                <Image Source="{Binding UserPic}" HeightRequest="50" WidthRequest="50"></Image>
-                                <Label Text="{Binding Title}" FontSize="Large"></Label>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding UserPic}" HeightRequest="50" WidthRequest="50"></Image>
+                                    <Label Text="{Binding Title}" FontSize="Large"></Label>
+                                </StackLayout>
                                 <Image Source="{Binding Path}" HeightRequest="300"></Image>
                             </StackLayout>
                         </ViewCell>
