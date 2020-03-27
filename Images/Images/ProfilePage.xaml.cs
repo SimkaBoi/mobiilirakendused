@@ -44,7 +44,11 @@ namespace Images
         private async void SaveChanges(object sender, EventArgs e)
         {
             var user = (UserData)BindingContext;
-            if(user.Username != null || user.Username != "")
+            if(user.Username == null || user.Username == "")
+            {
+                OnAlert("Please fill all the fields!");
+            }
+            else
             {
                 user.Username = UsernameEntry.Text;
                 var path = ProfilePicEntry.Source.ToString();
@@ -52,7 +56,13 @@ namespace Images
                 user.ProfilePicPath = fixedPath;
 
                 await App.Database.SaveUserAsync(user);
+                OnAlert("Changes have been saved!");
             }
+        }
+
+        private async void OnAlert(string alert)
+        {
+            Alert.Text = alert;
         }
     }
 }

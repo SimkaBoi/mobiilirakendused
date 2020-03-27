@@ -22,14 +22,14 @@ namespace Images
         {
             if(Username.Text == "" || Username.Text == null || Password.Text == "" || Password.Text == null)
             {
-                OnError("Please fill all the fields!");
+                OnAlert("Please fill all the fields!");
             }
             else
             {
                 List<UserData> users = await App.Database.GetUsersAsync();
                 if(users.Count == 0)
                 {
-                    OnError("Wrong username or password!");
+                    OnAlert("Wrong username or password!");
                 }
                 else
                 {
@@ -43,7 +43,7 @@ namespace Images
                         }
                         else
                         {
-                            OnError("Wrong username or password!");
+                            OnAlert("Wrong username or password!");
                         }
                     }
                 }
@@ -58,12 +58,12 @@ namespace Images
             {
                 if (user.Username == "" || user.Username == null || user.Password == "" || user.Password == null)
                 {
-                    OnError("Please fill all the fields!");
+                    OnAlert("Please fill all the fields!");
                 }
                 else
                 {
                     await App.Database.SaveUserAsync(user);
-                    Alert.Text = "User created!";
+                    OnAlert("User created!");
                 }
             }
             else
@@ -72,12 +72,12 @@ namespace Images
                 {
                     if (user.Username == "" || user.Username == null || user.Password == "" || user.Password == null)
                     {
-                        OnError("Please fill all the fields!");
+                        OnAlert("Please fill all the fields!");
                         break;
                     }
                     else if (name.Username == user.Username)
                     {
-                        OnError("Username is already taken!");
+                        OnAlert("Username is already taken!");
                         break;
                     }
                     else
@@ -92,7 +92,7 @@ namespace Images
             }
         }
 
-        private async void OnError(string error)
+        private async void OnAlert(string error)
         {
             Alert.Text = error;
         }

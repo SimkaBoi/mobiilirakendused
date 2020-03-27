@@ -43,7 +43,11 @@ namespace Images
                 return;
 
             // db stuff
-            if(ImageTitle.Text != null || ImageTitle.Text != "" || file.Path != null || file.Path != "")
+            if (ImageTitle.Text == null || ImageTitle.Text == "" || file.Path == null || file.Path == "")
+            {
+                OnAlert("Title or image is missing!");
+            }
+            else
             {
                 var user = (UserData)BindingContext;
                 var image = new ImageData();
@@ -51,10 +55,7 @@ namespace Images
                 image.Path = file.Path;
                 image.UserPic = user.ProfilePicPath;
                 await App.Database.SaveImageAsync(image);
-            }
-            else
-            {
-                //alert shit
+                OnAlert("Image has been posted!");
             }
         }
 
@@ -79,7 +80,7 @@ namespace Images
             // db stuff
             if (ImageTitle.Text == null || ImageTitle.Text == "" || file.Path == null || file.Path == "")
             {
-                // alert shit
+                OnAlert("Title or image is missing!");
             }
             else
             {
@@ -89,7 +90,13 @@ namespace Images
                 image.Path = file.Path;
                 image.UserPic = user.ProfilePicPath;
                 await App.Database.SaveImageAsync(image);
+                OnAlert("Image has been posted!");
             }
+        }
+
+        private async void OnAlert(string alert)
+        {
+            Alert.Text = alert;
         }
     }
 }

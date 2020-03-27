@@ -14,6 +14,7 @@
             <Image Source="{Binding ProfilePicPath}" x:Name="ProfilePicEntry" HeightRequest="350"/>
             <Button Text="Add a profile picture" Clicked="AddProfilePic"></Button>
             <Button Text="Save changes" Clicked="SaveChanges"></Button>
+            <Label x:Name="Alert" Text=""></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
