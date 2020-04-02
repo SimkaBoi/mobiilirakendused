@@ -7,6 +7,23 @@
              x:Class="Images.ImageDetailsPage">
     <ContentPage.Content>
         <StackLayout>
+            <ListView x:Name="commentList" ItemsSource="{Binding Comment}" VerticalOptions="FillAndExpand" HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="20,20,20,20">
+                                <StackLayout Orientation="Vertical">
+                                    <Image Source="{Binding ProfilePicPath}" HeightRequest="50" WidthRequest="50"></Image>
+                                    <Label Text="{Binding UserName}" FontSize="Large"></Label>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding CommentString}" FontSize="Large"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

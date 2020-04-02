@@ -25,6 +25,7 @@ namespace Images
         public string Title { get; set; }
         public string Path { get; set; }
         public string UserPic { get; set; }
+        public string UserName { get; set; }
         private async void OnTakePictureButtonClicked(object sender, EventArgs e)
         {
             await CrossMedia.Current.Initialize();
@@ -55,6 +56,7 @@ namespace Images
                 Title = ImageTitle.Text;
                 Path = file.Path;
                 UserPic = user.ProfilePicPath;
+                UserName = user.Username;
                 AddPic.Source = file.Path;
             }
         }
@@ -88,6 +90,7 @@ namespace Images
                 Title = ImageTitle.Text;
                 Path = file.Path;
                 UserPic = user.ProfilePicPath;
+                UserName = user.Username;
                 AddPic.Source = file.Path;
             }
         }
@@ -99,7 +102,7 @@ namespace Images
 
         private async void SaveButtonClicked(object sender, EventArgs e)
         {
-            var image = new ImageData() { Title = ImageTitle.Text, Path = Path, UserPic = UserPic };
+            var image = new ImageData() { Title = ImageTitle.Text, Path = Path, UserPic = UserPic, UserName = UserName };
             await App.Database.SaveImageAsync(image);
             OnAlert("Image has been posted!");
         }

@@ -11,6 +11,7 @@ namespace Images.Data
         public int Id { get; set; }
         public string UserName { get; set; }
         public string ProfilePicPath { get; set; }
+        public string CommentString { get; set; }
         public int UserId { get; set; }
         public int PostId { get; set; }
 

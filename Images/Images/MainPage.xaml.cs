@@ -37,15 +37,15 @@ namespace Images
 
         private async void SingleTap(object sender, EventArgs e)
         {
-            /*
             var stackLayout = sender as StackLayout;
             var image = stackLayout.BindingContext as ImageData;
+            var user = (UserData)BindingContext;
+            var userAndPostId = new PostAndUserIdModel() { UserId = user.Id, PostId = image.Id };
 
             await Navigation.PushAsync(new ImageDetailsPage
             {
-                BindingContext = image,
+                BindingContext = userAndPostId,
             });
-            */
         }
 
         private async void DoubleTap(object sender, EventArgs e)
