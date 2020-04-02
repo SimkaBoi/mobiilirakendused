@@ -15,6 +15,8 @@ namespace Images.Data
             _database = new SQLiteAsyncConnection(dbPath);
             _database.CreateTableAsync<ImageData>().Wait();
             _database.CreateTableAsync<UserData>().Wait();
+            _database.CreateTableAsync<CommentData>().Wait();
+            _database.CreateTableAsync<LikeData>().Wait();
         }
         // notes
         public Task<List<ImageData>> GetImagesAsync()
@@ -85,6 +87,76 @@ namespace Images.Data
         public Task<int> GetUserCount()
         {
             return _database.Table<UserData>().CountAsync();
+        }
+
+        // comments
+        public Task<List<CommentData>> GetCommentsAsync()
+        {
+            return _database.Table<CommentData>().ToListAsync();
+        }
+
+        public Task<CommentData> GetCommentsAsync(int id)
+        {
+            return _database.Table<CommentData>()
+                            .Where(x => x.Id == id)
+                            .FirstOrDefaultAsync();
+        }
+
+        public Task<int> SaveCommentAsync(CommentData comment)
+        {
+            if (comment.Id != 0)
+            {
+                return _database.UpdateAsync(comment);
+            }
+            else
+            {
+                return _database.InsertAsync(comment);
+            }
+        }
+
+        public Task<int> DeleteCommentsAsync(CommentData comment)
+        {
+            return _database.DeleteAsync(comment);
+        }
+
+        public Task<int> GetCommentsCount()
+        {
+            return _database.Table<CommentData>().CountAsync();
+        }
+
+        // likes
+        public Task<List<LikeData>> GetLikesAsync()
+        {
+            return _database.Table<LikeData>().ToListAsync();
+        }
+
+        public Task<LikeData> GetLikeAsync(int id)
+        {
+            return _database.Table<LikeData>()
+                            .Where(x => x.Id == id)
+                            .FirstOrDefaultAsync();
+        }
+
+        public Task<int> SaveLikeAsync(LikeData like)
+        {
+            if (like.Id != 0)
+            {
+                return _database.UpdateAsync(like);
+            }
+            else
+            {
+                return _database.InsertAsync(like);
+            }
+        }
+
+        public Task<int> DeleteLikeAsync(LikeData like)
+        {
+            return _database.DeleteAsync(like);
+        }
+
+        public Task<int> GetLikeCount()
+        {
+            return _database.Table<LikeData>().CountAsync();
         }
     }
 }

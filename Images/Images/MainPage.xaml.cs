@@ -34,5 +34,40 @@ namespace Images
             List<ImageData> Images = await App.Database.GetImagesAsync();
             pictureList.ItemsSource = Images;
         }
+
+        private async void SingleTap(object sender, EventArgs e)
+        {
+            /*
+            var stackLayout = sender as StackLayout;
+            var image = stackLayout.BindingContext as ImageData;
+
+            await Navigation.PushAsync(new ImageDetailsPage
+            {
+                BindingContext = image,
+            });
+            */
+        }
+
+        private async void DoubleTap(object sender, EventArgs e)
+        {
+            var stackLayout = sender as StackLayout;
+            var image = stackLayout.BindingContext as ImageData;
+            var user = (UserData)BindingContext;
+            List<LikeData> likes = await App.Database.GetLikesAsync();
+            foreach(var like in likes)
+            {
+                if(like.UserId == user.Id && like.PostId == image.Id)
+                {
+                    await App.Database.DeleteLikeAsync(like);
+                    image.Likes--;
+                    await App.Database.SaveImageAsync(image);
+                    return;
+                }
+            }
+            LikeData addLike = new LikeData() { Id = 0, PostId = image.Id, UserId = user.Id };
+            await App.Database.SaveLikeAsync(addLike);
+            image.Likes++;
+            await App.Database.SaveImageAsync(image);
+        }
     }
 }
