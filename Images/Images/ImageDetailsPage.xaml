@@ -7,6 +7,8 @@
              x:Class="Images.ImageDetailsPage">
     <ContentPage.Content>
         <StackLayout>
+            <Entry x:Name="CommentEntry" Placeholder="Add a comment"></Entry>
+            <Button Clicked="CommentAddButton_Clicked" Text="Add a comment"></Button>
             <ListView x:Name="commentList" ItemsSource="{Binding Comment}" VerticalOptions="FillAndExpand" HasUnevenRows="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>

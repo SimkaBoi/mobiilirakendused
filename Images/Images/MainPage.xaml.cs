@@ -40,7 +40,7 @@ namespace Images
             var stackLayout = sender as StackLayout;
             var image = stackLayout.BindingContext as ImageData;
             var user = (UserData)BindingContext;
-            var userAndPostId = new PostAndUserIdModel() { UserId = user.Id, PostId = image.Id };
+            var userAndPostId = new PostAndUserDataModel() { UserId = user.Id, PostId = image.Id, UserName = user.Username, ProfilePicPath = user.ProfilePicPath };
 
             await Navigation.PushAsync(new ImageDetailsPage
             {

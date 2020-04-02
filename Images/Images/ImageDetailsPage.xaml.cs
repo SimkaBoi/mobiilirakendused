@@ -27,17 +27,30 @@ namespace Images
 
         private async void GetComments()
         {
-            var userAndPostId = (PostAndUserIdModel)BindingContext;
+            var userAndPostData = (PostAndUserDataModel)BindingContext;
             List<CommentData> Comments = await App.Database.GetCommentsAsync();
             List<CommentData> PostComments = new List<CommentData>();
             foreach(var comment in Comments)
             {
-                if(userAndPostId.PostId == comment.PostId)
+                if(userAndPostData.PostId == comment.PostId)
                 {
                     PostComments.Add(comment);
                 }
             }
             commentList.ItemsSource = PostComments;
+        }
+
+        private void CommentAddButton_Clicked(object sender, EventArgs e)
+        {
+            var userAndPostData = (PostAndUserDataModel)BindingContext;
+            CommentData comment = new CommentData();
+            comment.Id = 0;
+            comment.PostId = userAndPostData.PostId;
+            comment.UserId = userAndPostData.UserId;
+            comment.UserName = userAndPostData.UserName;
+            comment.ProfilePicPath = userAndPostData.ProfilePicPath;
+            comment.CommentString = CommentEntry.Text;
+            App.Database.SaveCommentAsync(comment);
         }
     }
 }
