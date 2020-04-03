@@ -92,7 +92,7 @@ namespace Images
             }
         }
 
-        private async void OnAlert(string error)
+        private void OnAlert(string error)
         {
             Alert.Text = error;
         }

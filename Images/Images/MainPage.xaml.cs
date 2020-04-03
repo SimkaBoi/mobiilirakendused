@@ -1,15 +1,10 @@
 ﻿using Images.Data;
 using Images.Models;
-using Plugin.Media;
-using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace Images
 {
@@ -61,6 +56,7 @@ namespace Images
                     await App.Database.DeleteLikeAsync(like);
                     image.Likes--;
                     await App.Database.SaveImageAsync(image);
+                    pictureList.ItemsSource = Task.Run(async () => await App.Database.GetImagesAsync()).Result;
                     return;
                 }
             }
@@ -68,6 +64,7 @@ namespace Images
             await App.Database.SaveLikeAsync(addLike);
             image.Likes++;
             await App.Database.SaveImageAsync(image);
+            pictureList.ItemsSource = Task.Run(async () => await App.Database.GetImagesAsync()).Result;
         }
     }
 }

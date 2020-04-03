@@ -60,7 +60,7 @@ namespace Images
             }
         }
 
-        private async void OnAlert(string alert)
+        private void OnAlert(string alert)
         {
             Alert.Text = alert;
         }
