@@ -3,11 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Images.ViewModels"
              mc:Ignorable="d"
              x:Class="Images.MainPage">
+
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="pictureList" ItemsSource="{Binding Images}" VerticalOptions="FillAndExpand" HasUnevenRows="true">
+            <ListView x:Name="pictureList" ItemsSource="{Binding Images}" VerticalOptions="FillAndExpand" HasUnevenRows="true" SelectionMode="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
