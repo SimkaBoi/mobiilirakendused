@@ -46,7 +46,7 @@ namespace Images
             var user = (UserData)BindingContext;
             if(user.Username == null || user.Username == "")
             {
-                OnAlert("Please fill all the fields!");
+                await Application.Current.MainPage.DisplayAlert("Alert", "Please fill all the fields!", "OK");
             }
             else
             {
@@ -56,13 +56,8 @@ namespace Images
                 user.ProfilePicPath = fixedPath;
 
                 await App.Database.SaveUserAsync(user);
-                OnAlert("Changes have been saved!");
+                await Application.Current.MainPage.DisplayAlert("Alert", "Changes have been saved!", "OK");
             }
-        }
-
-        private void OnAlert(string alert)
-        {
-            Alert.Text = alert;
         }
     }
 }

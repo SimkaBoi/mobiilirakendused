@@ -48,7 +48,8 @@ namespace Images
             // db stuff
             if (ImageTitle.Text == null || ImageTitle.Text == "" || file.Path == null || file.Path == "")
             {
-                OnAlert("Title or image is missing!");
+                await Application.Current.MainPage.DisplayAlert("Alert", "Title or image is missing!", "OK");
+                return;
             }
             else
             {
@@ -82,7 +83,8 @@ namespace Images
             // db stuff
             if (ImageTitle.Text == null || ImageTitle.Text == "" || file.Path == null || file.Path == "")
             {
-                OnAlert("Title or image is missing!");
+                await Application.Current.MainPage.DisplayAlert("Alert", "Title or image is missing!", "OK");
+                return;
             }
             else
             {
@@ -95,16 +97,12 @@ namespace Images
             }
         }
 
-        private void OnAlert(string alert)
-        {
-            Alert.Text = alert;
-        }
-
         private async void SaveButtonClicked(object sender, EventArgs e)
         {
             var image = new ImageData() { Title = ImageTitle.Text, Path = Path, UserPic = UserPic, UserName = UserName };
             await App.Database.SaveImageAsync(image);
-            OnAlert("Image has been posted!");
+            await Application.Current.MainPage.DisplayAlert("Alert", "Image has been posted!", "OK");
+            return;
         }
     }
 }

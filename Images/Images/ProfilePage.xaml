@@ -13,7 +13,6 @@
             <Label Text="Profile Image" x:Name="ImageLabel"/>
             <Button Text="Change profile picture" Clicked="AddProfilePic"></Button>
             <Image Source="{Binding ProfilePicPath}" x:Name="ProfilePicEntry" HeightRequest="200" WidthRequest="200"></Image>
-            <Label x:Name="Alert" Text="" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
             <Button Text="Save changes" Clicked="SaveChanges" VerticalOptions="EndAndExpand" Margin="0, 0, 0, 15"></Button>
         </StackLayout>
     </ContentPage.Content>

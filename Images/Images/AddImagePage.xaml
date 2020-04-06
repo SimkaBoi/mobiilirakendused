@@ -15,7 +15,6 @@
             </StackLayout>
             <Image x:Name="AddPic" HeightRequest="200" WidthRequest="200"></Image>
             <Button x:Name="Save" Text="Save Photo" Clicked="SaveButtonClicked" HorizontalOptions="FillAndExpand"></Button>
-            <Label x:Name="Alert" Text="" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -22,14 +22,16 @@ namespace Images
         {
             if(Username.Text == "" || Username.Text == null || Password.Text == "" || Password.Text == null)
             {
-                OnAlert("Please fill all the fields!");
+                await Application.Current.MainPage.DisplayAlert("Alert", "Please fill all the fields!", "OK");
+                return;
             }
             else
             {
                 List<UserData> users = await App.Database.GetUsersAsync();
                 if(users.Count == 0)
                 {
-                    OnAlert("Wrong username or password!");
+                    await Application.Current.MainPage.DisplayAlert("Alert", "Wrong username or password!", "OK");
+                    return;
                 }
                 else
                 {
@@ -40,12 +42,11 @@ namespace Images
                             var tabbedPage = new FirstTabbedPage();
                             tabbedPage.BindingContext = user;
                             await Navigation.PushAsync(tabbedPage);
-                        }
-                        else
-                        {
-                            OnAlert("Wrong username or password!");
+                            return;
                         }
                     }
+                    await Application.Current.MainPage.DisplayAlert("Alert", "Wrong username or password!", "OK");
+                    return;
                 }
             }
         }
@@ -58,12 +59,14 @@ namespace Images
             {
                 if (user.Username == "" || user.Username == null || user.Password == "" || user.Password == null)
                 {
-                    OnAlert("Please fill all the fields!");
+                    await Application.Current.MainPage.DisplayAlert("Alert", "Please fill all the fields!", "OK");
+                    return;
                 }
                 else
                 {
                     await App.Database.SaveUserAsync(user);
-                    OnAlert("User created!");
+                    await Application.Current.MainPage.DisplayAlert("Alert", "User created!", "OK");
+                    return;
                 }
             }
             else
@@ -72,29 +75,22 @@ namespace Images
                 {
                     if (user.Username == "" || user.Username == null || user.Password == "" || user.Password == null)
                     {
-                        OnAlert("Please fill all the fields!");
+                        await Application.Current.MainPage.DisplayAlert("Alert", "Please fill all the fields!", "OK");
                         break;
                     }
                     else if (name.Username == user.Username)
                     {
-                        OnAlert("Username is already taken!");
+                        await Application.Current.MainPage.DisplayAlert("Alert", "Username is already taken!", "OK");
                         break;
                     }
                     else
                     {
                         await App.Database.SaveUserAsync(user);
-                        var tabbedPage = new FirstTabbedPage();
-                        tabbedPage.BindingContext = user;
-                        await Navigation.PushAsync(tabbedPage);
+                        await Application.Current.MainPage.DisplayAlert("Alert", "User created!", "OK");
                         break;
                     }
                 }
             }
-        }
-
-        private void OnAlert(string error)
-        {
-            Alert.Text = error;
         }
     }
 }

@@ -18,7 +18,6 @@
                 <Button Text="Login" Clicked="OnLoginButtonClicked" HorizontalOptions="FillAndExpand"/>
                 <Button Text="Register" Clicked="OnRegisterButtonClicked" HorizontalOptions="FillAndExpand"/>
             </StackLayout>
-            <Label Text="" x:Name="Alert"></Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
