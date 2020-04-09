@@ -9,7 +9,7 @@
             android:TabbedPage.ToolbarPlacement="Bottom"
             x:Class="Images.FirstTabbedPage">
     <!--Pages can be added as references or inline-->
-    <local:MainPage Title="MainPage"/>
-    <local:ProfilePage Title="Profile"/>
-    <local:AddImagePage Title="AddImage"/>
+    <local:MainPage Title="MainPage" IconImageSource="mainpage_icon.png"/>
+    <local:ProfilePage Title="Profile" IconImageSource="profilepage_icon.png"/>
+    <local:AddImagePage Title="AddImage" IconImageSource="addimagepage_icon.png"/>
 </TabbedPage>
