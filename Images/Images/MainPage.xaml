@@ -19,12 +19,12 @@
                             <StackLayout Margin="20,20,20,20">
                                 <StackLayout>
                                     <StackLayout Orientation="Horizontal">
-                                        <Frame CornerRadius="40" HeightRequest="80" WidthRequest="80" Padding="0" IsClippedToBounds="True">
+                                        <Frame CornerRadius="40" HeightRequest="80" WidthRequest="80" Padding="0" IsClippedToBounds="True" BorderColor="Gray" BackgroundColor="LightGray">
                                             <Image Source="{Binding UserPic}"  ></Image>
                                         </Frame>
                                         <StackLayout Orientation="Vertical">
-                                            <Label Text="{Binding UserName}" FontSize="Small"></Label>
-                                            <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="Medium"></Label>
+                                            <Label Text="{Binding UserName}" FontSize="Medium" FontAttributes="Bold"></Label>
+                                            <Label Text="{Binding Title}" FontSize="Small"></Label>
                                         </StackLayout>
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal">

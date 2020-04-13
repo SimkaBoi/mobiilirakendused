@@ -14,12 +14,14 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Margin="20,20,20,20">
-                                <StackLayout Orientation="Vertical">
-                                    <Image Source="{Binding ProfilePicPath}" HeightRequest="50" WidthRequest="50"></Image>
-                                    <Label Text="{Binding UserName}" FontSize="Large"></Label>
-                                </StackLayout>
-                                <StackLayout Orientation="Vertical">
-                                    <Label Text="{Binding CommentString}" FontSize="Large"></Label>
+                                <StackLayout Orientation="Horizontal">
+                                    <Frame CornerRadius="30" HeightRequest="60" WidthRequest="60" Padding="0" IsClippedToBounds="True" BorderColor="Gray" BackgroundColor="LightGray">
+                                        <Image Source="{Binding ProfilePicPath}"></Image>
+                                    </Frame>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="{Binding UserName}" FontSize="Small" FontAttributes="Bold"></Label>
+                                        <Label Text="{Binding CommentString}"></Label>
+                                    </StackLayout>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

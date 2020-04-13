@@ -27,7 +27,6 @@ namespace Images
 
         private async void SingleTap(object sender, EventArgs e)
         {
-            /*
             var stackLayout = sender as StackLayout;
             var image = stackLayout.BindingContext as ImageData;
             var user = Parent.BindingContext as UserData;
@@ -37,7 +36,6 @@ namespace Images
             {
                 BindingContext = userAndPostId,
             });
-            */
         }
 
         private async void DoubleTap(object sender, EventArgs e)

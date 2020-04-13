@@ -1,6 +1,7 @@
 ﻿using Images.Data;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -54,6 +55,7 @@ namespace Images
         private async void OnRegisterButtonClicked(object sender, EventArgs e)
         {
             var user = new UserData() { Username = Username.Text, Password = Password.Text };
+
             List<UserData> users = await App.Database.GetUsersAsync();
             if(users.Count == 0)
             {
@@ -64,6 +66,7 @@ namespace Images
                 }
                 else
                 {
+                    user.ProfilePicPath = "default-user-image.png";
                     await App.Database.SaveUserAsync(user);
                     await Application.Current.MainPage.DisplayAlert("Alert", "User created!", "OK");
                     return;
@@ -85,6 +88,7 @@ namespace Images
                     }
                     else
                     {
+                        user.ProfilePicPath = "default-user-image.png";
                         await App.Database.SaveUserAsync(user);
                         await Application.Current.MainPage.DisplayAlert("Alert", "User created!", "OK");
                         break;
