@@ -40,8 +40,13 @@ namespace Images
             commentList.ItemsSource = PostComments;
         }
 
-        private void CommentAddButton_Clicked(object sender, EventArgs e)
+        private async void CommentAddButton_Clicked(object sender, EventArgs e)
         {
+            if(CommentEntry.Text == "" || CommentEntry.Text == null)
+            {
+                await Application.Current.MainPage.DisplayAlert("Alert", "Comment field is empty!", "OK");
+                return;
+            }
             var userAndPostData = (PostAndUserDataModel)BindingContext;
             CommentData comment = new CommentData();
             comment.Id = 0;
@@ -50,7 +55,11 @@ namespace Images
             comment.UserName = userAndPostData.UserName;
             comment.ProfilePicPath = userAndPostData.ProfilePicPath;
             comment.CommentString = CommentEntry.Text;
-            App.Database.SaveCommentAsync(comment);
+            await App.Database.SaveCommentAsync(comment);
+            ImageData image = await App.Database.GetImageAsync(userAndPostData.PostId);
+            image.Comments++;
+            await App.Database.SaveImageAsync(image);
+            GetComments();
         }
     }
 }

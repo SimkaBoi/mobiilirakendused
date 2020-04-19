@@ -1,8 +1,10 @@
 ﻿using Images.Data;
+using Images.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Text;
 
 namespace Images.ViewModels

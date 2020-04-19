@@ -32,8 +32,11 @@
                                     </StackLayout>
                                     <Label Text="{Binding Likes, StringFormat='{0} likes'}"></Label>
                                 </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Button x:Name="commentButton" Text="{Binding Comments, StringFormat='{0} comments'}" Clicked="Comments_Clicked"></Button>
+                                    <Label Text=""></Label>
+                                </StackLayout>
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="SingleTap"></TapGestureRecognizer>
                                     <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="DoubleTap"></TapGestureRecognizer>
                                 </StackLayout.GestureRecognizers>
                             </StackLayout>

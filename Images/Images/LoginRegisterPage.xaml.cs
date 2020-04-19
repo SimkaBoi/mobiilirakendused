@@ -21,7 +21,7 @@ namespace Images
 
         private async void OnLoginButtonClicked(object sender, EventArgs e)
         {
-            if(Username.Text == "" || Username.Text == null || Password.Text == "" || Password.Text == null)
+            if (Username.Text == "" || Username.Text == null || Password.Text == "" || Password.Text == null)
             {
                 await Application.Current.MainPage.DisplayAlert("Alert", "Please fill all the fields!", "OK");
                 return;
@@ -66,7 +66,7 @@ namespace Images
                 }
                 else
                 {
-                    user.ProfilePicPath = "default-user-image.png";
+                    user.ProfilePicPath = "http://i.imgur.com/SqX9Qqm.jpg";
                     await App.Database.SaveUserAsync(user);
                     await Application.Current.MainPage.DisplayAlert("Alert", "User created!", "OK");
                     return;
@@ -88,7 +88,7 @@ namespace Images
                     }
                     else
                     {
-                        user.ProfilePicPath = "default-user-image.png";
+                        user.ProfilePicPath = "http://i.imgur.com/SqX9Qqm.jpg";
                         await App.Database.SaveUserAsync(user);
                         await Application.Current.MainPage.DisplayAlert("Alert", "User created!", "OK");
                         break;

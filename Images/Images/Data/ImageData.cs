@@ -14,5 +14,6 @@ namespace Images.Data
         public string UserPic { get; set; }
         public string UserName { get; set; }
         public int Likes { get; set; }
+        public int Comments { get; set; }
     }
 }

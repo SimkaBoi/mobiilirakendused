@@ -25,19 +25,6 @@ namespace Images
             (this.BindingContext as MainViewModel)?.GetImages();
         }
 
-        private async void SingleTap(object sender, EventArgs e)
-        {
-            var stackLayout = sender as StackLayout;
-            var image = stackLayout.BindingContext as ImageData;
-            var user = Parent.BindingContext as UserData;
-            var userAndPostId = new PostAndUserDataModel() { UserId = user.Id, PostId = image.Id, UserName = user.Username, ProfilePicPath = user.ProfilePicPath };
-
-            await Navigation.PushAsync(new ImageDetailsPage
-            {
-                BindingContext = userAndPostId,
-            });
-        }
-
         private async void DoubleTap(object sender, EventArgs e)
         {
             var stackLayout = sender as StackLayout;
@@ -60,6 +47,19 @@ namespace Images
             image.Likes++;
             await App.Database.SaveImageAsync(image);
             (this.BindingContext as MainViewModel)?.GetImages();
+        }
+        
+        private async void Comments_Clicked(object sender, EventArgs e)
+        {
+            var button = sender as Button;
+            var image = button.BindingContext as ImageData;
+            var user = Parent.BindingContext as UserData;
+            var userAndPostId = new PostAndUserDataModel() { UserId = user.Id, PostId = image.Id, UserName = user.Username, ProfilePicPath = user.ProfilePicPath };
+
+            await Navigation.PushAsync(new ImageDetailsPage
+            {
+                BindingContext = userAndPostId,
+            });
         }
     }
 }

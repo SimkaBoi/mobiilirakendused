@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="default-user-image.png" />
+    <Content Include="default-user-image.png" />
   </ItemGroup>
 
   <ItemGroup>
